@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Brand Primary: Deep Navy (#003B73) */
+    --primary: 209 100% 23%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Brand Blue: Precision Medical Blue (#0066CC) */
+    --secondary: 210 100% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Medical Accent */
+    --accent: 200 98% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 100% 40%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@theme {
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: var(--font-heading), var(--font-sans);
+  
+  --color-brand-navy: #003B73;
+  --color-brand-blue: #0066CC;
+  --color-brand-blue-hover: #0052A3;
+  --color-brand-navy-dark: #00274D;
+  --color-brand-surface: #F8FAFC;
+  --color-brand-border: #E2E8F0;
+  --color-brand-muted: #64748B;
+  --color-brand-dark: #0A1128;
+}
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Subtle focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid #0066CC;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling with reduced-motion support */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom precision grid patterns */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 59, 115, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 59, 115, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(0, 102, 204, 0.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
