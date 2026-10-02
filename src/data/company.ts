@@ -1,9 +1,9 @@
 import { CompanyInfo } from "@/types";
 
 export const companyData: CompanyInfo = {
-  name: "Leonardo Adalbert Medical Technology",
-  legalName: "Leonardo Adalbert Medical Technology Inc.",
-  tagline: "Advancing Global Healthcare Through Precision Engineering",
+  name: "Adalbert Medical Technology",
+  legalName: "Adalbert Medical Technology Inc.",
+  tagline: "Biomedical Engineering & High-Precision Medical Technology Facility",
   headquarters: {
     city: "Richmond",
     region: "Vancouver, British Columbia",

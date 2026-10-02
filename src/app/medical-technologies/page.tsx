@@ -24,7 +24,7 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "Medical Technologies | Proprietary Healthcare Platforms",
   description:
-    "Explore proprietary medical technology platforms engineered by Leonardo Adalbert Medical Technology, spanning biometric telemetry, surgical optics, haptic robotics, and cold plasma sterilization.",
+    "Explore proprietary medical technology platforms engineered by Adalbert Medical Technology, spanning biometric telemetry, surgical optics, haptic robotics, and cold plasma sterilization.",
   canonicalUrlRelative: "/medical-technologies",
 });
 

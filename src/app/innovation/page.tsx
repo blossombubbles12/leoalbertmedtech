@@ -9,7 +9,7 @@ import { Cpu, Zap, Microscope, ShieldCheck, ArrowRight, CheckCircle2, Activity, 
 export const metadata: Metadata = constructMetadata({
   title: "Innovation & Digital Health | Biomedical R&D Headquarters Richmond, BC",
   description:
-    "Explore how Leonardo Adalbert Medical Technology advances healthcare through digital telemetry, surgical robotics, and biomedical research in Richmond, Vancouver, Canada.",
+    "Explore how Adalbert Medical Technology advances healthcare through digital telemetry, surgical robotics, and biomedical research in Richmond, Vancouver, Canada.",
   canonicalUrlRelative: "/innovation",
 });
 
@@ -92,7 +92,7 @@ export default function InnovationPage() {
                 Transforming High-Acuity Care Through Deep Tech
               </Heading>
               <Text className="text-[17px] sm:text-[18px] text-slate-700 leading-relaxed">
-                At Leonardo Adalbert, innovation is guided by practical clinical requirements. We engineer hardware and embedded software that improve diagnostic accuracy and streamline operating room workflows.
+                At Adalbert Medical Technology, innovation is guided by practical clinical requirements. We engineer hardware and embedded software that improve diagnostic accuracy and streamline operating room workflows.
               </Text>
               <Text className="text-[16px] text-slate-600 leading-relaxed">
                 Our Richmond R&D center conducts rapid prototyping, electromechanical stress-testing, and algorithmic signal validation to ensure every system achieves clinical-grade dependability before hospital deployment.
@@ -126,7 +126,7 @@ export default function InnovationPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3]">
                 <Image
                   src="/cdc-p33DqVXhWvs-u.jpg"
-                  alt="Leonardo Adalbert clinical research laboratory and sensor testing"
+                  alt="Adalbert Medical Technology clinical research laboratory and sensor testing"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -181,7 +181,7 @@ export default function InnovationPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3]">
                 <Image
                   src="/owen-beard-DK8jXx1B-1c-.jpg"
-                  alt="Leonardo Adalbert biomedical engineering prototyping and calibration"
+                  alt="Adalbert Medical Technology biomedical engineering prototyping and calibration"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -235,7 +235,7 @@ export default function InnovationPage() {
               </Badge>
 
               <Heading level="h2" className="text-3xl sm:text-4xl text-white font-extrabold tracking-tight">
-                Partner With Leonardo Adalbert R&D
+                Partner With Adalbert Medical Technology R&D
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">

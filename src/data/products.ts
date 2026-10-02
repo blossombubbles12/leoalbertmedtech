@@ -21,7 +21,7 @@ export const productsData: ExtendedProduct[] = [
   {
     id: "prod-la-telemetry-x1",
     slug: "lat-x100-telemetry-monitor",
-    name: "Leonardo Adalbert Telemetry X1 Monitor",
+    name: "Adalbert Telemetry X1 Monitor",
     modelNumber: "LAT-X100",
     category: "Monitoring Systems",
     status: "Available",

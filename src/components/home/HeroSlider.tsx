@@ -25,7 +25,7 @@ const slides: SlideData[] = [
     badge: "ADVANCED MEDICAL TECHNOLOGY",
     headline: "Engineering Precision for Next-Generation Healthcare",
     description:
-      "Leonardo Adalbert Medical Technology designs, develops, and delivers intelligent clinical hardware, precision telemetry, and digital health platforms for modern healthcare organizations.",
+      "Adalbert Medical Technology operates high-precision engineering and manufacturing facilities, developing intelligent clinical hardware, surgical optics, and telemetry systems.",
     primaryCta: { label: "Explore Medical Technologies", href: "/medical-technologies" },
     secondaryCta: { label: "Our Solutions", href: "/solutions" },
     image: "/rodrigo-porto-vfy71fExF7g-advanced operation.jpg",
@@ -149,7 +149,7 @@ export function HeroSlider() {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       aria-roledescription="carousel"
-      aria-label="Leonardo Adalbert Featured Medical Technologies"
+      aria-label="Adalbert Medical Technology Facility and Innovations"
     >
       {/* Background Image Carousel with AnimatePresence */}
       <AnimatePresence initial={false} custom={direction}>

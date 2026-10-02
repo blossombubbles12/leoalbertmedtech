@@ -10,7 +10,7 @@ import { BookOpen, FileText, ArrowRight, ExternalLink, Microscope, CheckCircle2,
 export const metadata: Metadata = constructMetadata({
   title: "Research & Publications | Clinical Engineering Studies Richmond, BC",
   description:
-    "Scientific research, clinical studies, and biomedical engineering papers from Leonardo Adalbert Medical Technology in Richmond, Greater Vancouver, Canada.",
+    "Scientific research, clinical studies, and biomedical engineering papers from Adalbert Medical Technology in Richmond, Greater Vancouver, Canada.",
   canonicalUrlRelative: "/research",
 });
 
@@ -34,7 +34,7 @@ export default function ResearchPage() {
               Research & Engineering Publications
             </Heading>
             <Text variant="lead" className="text-slate-600 max-w-3xl">
-              Biomedical research, clinical methodology papers, and hardware architecture whitepapers authored and peer-reviewed by Leonardo Adalbert engineering scientists.
+              Biomedical research, clinical methodology papers, and hardware architecture whitepapers authored and peer-reviewed by Adalbert Medical Technology engineering scientists.
             </Text>
           </div>
         </Container>
@@ -48,7 +48,7 @@ export default function ResearchPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3]">
                 <Image
                   src="/cdc-p33DqVXhWvs-u.jpg"
-                  alt="Biomedical engineering laboratory and clinical research at Leonardo Adalbert"
+                  alt="Biomedical engineering laboratory and clinical research at Adalbert Medical Technology"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -67,7 +67,7 @@ export default function ResearchPage() {
                 Our research initiatives span microsecond-latency telemetry synchronization, surgical optical filtering, and biocompatible material science for acute healthcare environments.
               </Text>
               <Text className="text-[15.5px] text-slate-600 leading-relaxed">
-                By publishing foundational studies, Leonardo Adalbert collaborates with university faculties, clinical researchers, and biomedical engineering societies across North America and Europe.
+                By publishing foundational studies, Adalbert Medical Technology collaborates with university faculties, clinical researchers, and biomedical engineering societies across North America and Europe.
               </Text>
 
               <div className="space-y-3 pt-2">
@@ -184,7 +184,7 @@ export default function ResearchPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Leonardo Adalbert regularly welcomes joint investigational protocols and validation studies with accredited medical faculties and university teaching hospitals.
+                Adalbert Medical Technology regularly welcomes joint investigational protocols and validation studies with accredited medical faculties and university teaching hospitals.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

@@ -9,7 +9,7 @@ import { FileText, Download, ShieldCheck, ArrowRight, BookOpen, Layers, CheckCir
 export const metadata: Metadata = constructMetadata({
   title: "Clinical Resources & Documentation | Technical Datasheets & Guides",
   description:
-    "Technical documentation, user guides, whitepapers, and regulatory notices from Leonardo Adalbert Medical Technology in Richmond, BC.",
+    "Technical documentation, user guides, whitepapers, and regulatory notices from Adalbert Medical Technology in Richmond, BC.",
   canonicalUrlRelative: "/resources",
 });
 
@@ -22,7 +22,7 @@ export default function ResourcesPage() {
     },
     {
       title: "Architectural Datasheets",
-      desc: "Detailed mechanical, electrical, and clinical networking specifications for Leonardo Adalbert devices.",
+      desc: "Detailed mechanical, electrical, and clinical networking specifications for Adalbert Medical Technology devices.",
       icon: Layers,
     },
     {
@@ -51,7 +51,7 @@ export default function ResourcesPage() {
               Technical Documentation & Datasheets
             </Heading>
             <Text variant="lead" className="text-slate-600 max-w-3xl">
-              Access engineering specifications, clinical integration guides, regulatory compliance notices, and system architecture indices maintained by Leonardo Adalbert Medical Technology.
+              Access engineering specifications, clinical integration guides, regulatory compliance notices, and system architecture indices maintained by Adalbert Medical Technology.
             </Text>
           </div>
         </Container>
@@ -94,7 +94,7 @@ export default function ResourcesPage() {
                 Comprehensive Technical & Regulatory Documentation
               </Heading>
               <Text className="text-[17px] sm:text-[18px] text-slate-700 leading-relaxed">
-                Leonardo Adalbert provides verified, audited documentation for hospital biomedical engineers, procurement committees, and clinical department heads.
+                Adalbert Medical Technology provides verified, audited documentation for hospital biomedical engineers, procurement committees, and clinical department heads.
               </Text>
               <Text className="text-[15.5px] text-slate-600 leading-relaxed">
                 Every document in our technical repository is version-controlled and maintained directly by our Canadian engineering headquarters in Richmond, BC, ensuring complete alignment with global medical device standards.
@@ -118,7 +118,7 @@ export default function ResourcesPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3]">
                 <Image
                   src="/cesar-badilla-miranda-0Fv4M2hSZJU-tech.jpg"
-                  alt="Leonardo Adalbert engineering team reviewing technical documentation"
+                  alt="Adalbert Medical Technology engineering team reviewing technical documentation"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

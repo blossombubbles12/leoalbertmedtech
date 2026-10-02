@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "Clinical Solutions | Integrated Healthcare Environments",
   description:
-    "Explore integrated clinical and surgical solutions engineered for hospital operating theatres, intensive care wards, and diagnostic laboratories by Leonardo Adalbert Medical Technology.",
+    "Explore integrated clinical and surgical solutions engineered for hospital operating theatres, intensive care wards, and diagnostic laboratories by Adalbert Medical Technology.",
   canonicalUrlRelative: "/solutions",
 });
 

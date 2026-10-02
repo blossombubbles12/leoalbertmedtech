@@ -66,21 +66,22 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Leonardo Adalbert Medical Technology",
-  shortName: "LeoAlber MedTech",
-  legalName: "Leonardo Adalbert Medical Technology Inc.",
+  name: "Adalbert Medical Technology",
+  shortName: "Adalbert MedTech",
+  legalName: "Adalbert Medical Technology Inc.",
   domain: "leoalbermedtech.com",
   url: "https://leoalbermedtech.com",
   description:
-    "Leonardo Adalbert Medical Technology develops advanced medical engineering solutions, surgical technologies, and diagnostic innovations from Richmond, Vancouver, Canada.",
+    "Adalbert Medical Technology operates high-precision biomedical engineering and manufacturing facilities in Richmond, Vancouver, Canada, developing advanced clinical hardware, surgical optics, and telemetry systems.",
   keywords: [
-    "Medical Technology",
-    "Healthcare Innovation",
+    "Adalbert Medical Technology",
+    "Adalbert MedTech",
+    "Medical Technology Facility",
+    "Biomedical Engineering Facility",
+    "Healthcare Innovation Facility",
     "Surgical Equipment",
     "Diagnostic Systems",
-    "Biomedical Engineering",
     "Richmond Vancouver Medical Tech",
-    "Leonardo Adalbert Medical Technology",
   ],
   contact: {
     phone: "+16042438397",

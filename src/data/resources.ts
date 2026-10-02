@@ -24,7 +24,7 @@ export const resourcesData: ExtendedResourceItem[] = [
     language: "English / French",
     category: "Monitoring Systems",
     documentScope:
-      "This technical datasheet provides exhaustive electrical, mechanical, and network communication parameters for the Leonardo Adalbert LAT-X100 Telemetry System. Intended for clinical engineering and hospital IT departments.",
+      "This technical datasheet provides exhaustive electrical, mechanical, and network communication parameters for the Adalbert Medical Technology LAT-X100 Telemetry System. Intended for clinical engineering and hospital IT departments.",
     includedSections: [
       "Analog-to-Digital Converter (ADC) Signal Pathways",
       "Defibrillator-Proof Galvanic Isolation Circuitry",

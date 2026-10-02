@@ -7,9 +7,9 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Contact & Inquiries | Corporate Headquarters Richmond, BC",
+  title: "Contact & Inquiries | Canadian Operations Campus Richmond, BC",
   description:
-    "Contact Leonardo Adalbert Medical Technology in Richmond, Vancouver, Canada for engineering inquiries, clinical support, and partnerships.",
+    "Contact Adalbert Medical Technology in Richmond, Vancouver, Canada for engineering inquiries, clinical support, and partnerships.",
   canonicalUrlRelative: "/contact",
 });
 
@@ -22,13 +22,13 @@ export default function ContactPage() {
           <Breadcrumb items={[{ name: "Contact", url: "/contact" }]} />
           <div className="mt-6 max-w-3xl space-y-3">
             <Badge variant="secondary">
-              Engineering & Inquiries
+              Engineering & Facility Inquiries
             </Badge>
             <Heading level="h1" className="text-[#003B73]">
-              Contact Leonardo Adalbert Medical Technology
+              Contact Adalbert Medical Technology
             </Heading>
             <Text variant="lead" className="text-slate-600">
-              Connect directly with our biomedical engineering specialists, clinical integration consultants, and corporate office in Richmond, Greater Vancouver, Canada.
+              Connect directly with our biomedical engineering specialists, clinical integration consultants, and operations campus in Richmond, Greater Vancouver, Canada.
             </Text>
           </div>
         </Container>
@@ -43,7 +43,7 @@ export default function ContactPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-[16/10]">
                 <Image
                   src="/contact us building.jpg"
-                  alt="Leonardo Adalbert Medical Technology headquarters and operations facility in Richmond, BC"
+                  alt="Adalbert Medical Technology headquarters and operations facility in Richmond, BC"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"

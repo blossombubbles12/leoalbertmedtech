@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "Products & Medical Systems | Precision Hardware Catalog",
   description:
-    "Explore the medical technology devices, instruments, and precision clinical systems engineered by Leonardo Adalbert Medical Technology.",
+    "Explore the medical technology devices, instruments, and precision clinical systems engineered by Adalbert Medical Technology.",
   canonicalUrlRelative: "/products",
 });
 

@@ -102,7 +102,7 @@ export default function HomePage() {
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3]">
                 <Image
                   src="/vitaly-gariev-_zbqco3m7dA-.jpg"
-                  alt="Leonardo Adalbert clinical research and medical technology director"
+                  alt="Adalbert Medical Technology clinical research and biomedical director"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -122,7 +122,7 @@ export default function HomePage() {
               <div className="hidden sm:block absolute -bottom-8 -right-8 w-60 h-44 z-20 rounded-xl overflow-hidden shadow-xl border-4 border-white">
                 <Image
                   src="/contact us building.jpg"
-                  alt="Leonardo Adalbert Medical Technology headquarters and laboratory facility"
+                  alt="Adalbert Medical Technology headquarters and laboratory facility"
                   fill
                   className="object-cover"
                   sizes="240px"
@@ -146,11 +146,11 @@ export default function HomePage() {
               </Heading>
 
               <Text variant="lead" className="text-slate-700">
-                Leonardo Adalbert Medical Technology is an engineering-driven medical organization headquartered in Richmond, Vancouver, Canada. We specialize in designing, manufacturing, and deploying high-precision medical hardware, telemetry systems, and surgical platforms.
+                Adalbert Medical Technology operates state-of-the-art medical engineering and manufacturing facilities in Richmond, Vancouver, Canada. We specialize in designing, fabricating, and deploying high-precision medical hardware, telemetry systems, and surgical platforms.
               </Text>
 
               <Text variant="body" className="text-slate-600">
-                Our mission is to elevate patient care standards and clinical productivity by delivering intuitive, dependable, and technologically advanced instrumentation. Through deep collaboration with healthcare professionals, clinical researchers, and biomedical engineers, we build solutions that stand up to the most demanding hospital environments.
+                Our mission is to elevate patient care standards and clinical productivity by delivering intuitive, dependable, and technologically advanced instrumentation. Through deep collaboration with healthcare professionals, clinical researchers, and biomedical engineers, our Canadian facility builds solutions that stand up to the most demanding hospital environments.
               </Text>
 
               {/* Key Bullet Points */}
@@ -393,7 +393,7 @@ export default function HomePage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed">
-                At Leonardo Adalbert, research and engineering converge to address critical challenges in clinical environments. We focus on low-latency data transmission, medical sensor miniaturization, and intelligent workflow automation.
+                At Adalbert Medical Technology, research and engineering converge to address critical challenges in clinical environments. We focus on low-latency data transmission, medical sensor miniaturization, and intelligent workflow automation.
               </Text>
 
               <div className="space-y-4 pt-2">
@@ -434,7 +434,7 @@ export default function HomePage() {
               <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl aspect-[4/3]">
                 <Image
                   src="/cdc-p33DqVXhWvs-u.jpg"
-                  alt="Leonardo Adalbert clinical research laboratory and biomedical engineering testing"
+                  alt="Adalbert Medical Technology clinical research laboratory and biomedical engineering testing"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -448,7 +448,7 @@ export default function HomePage() {
                       R&D Focus
                     </span>
                     <span className="text-[12px] font-semibold text-slate-500">
-                      Canada Innovation Lab
+                      Richmond Innovation Campus
                     </span>
                   </div>
                   <h4 className="text-[16px] font-bold text-slate-900">
@@ -465,7 +465,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* 6. WHY LEONARDO ADALBERT (5 PILLARS) */}
+      {/* 6. WHY ADALBERT MEDICAL TECHNOLOGY (5 PILLARS) */}
       <Section spacing="xl" background="default">
         <Container size="xl">
           <div className="max-w-3xl mx-auto text-center mb-14 space-y-3">
@@ -473,7 +473,7 @@ export default function HomePage() {
               Our Core Strengths
             </Badge>
             <Heading level="h2" className="text-[#003B73]">
-              Why Healthcare Leaders Choose Leonardo Adalbert
+              Why Healthcare Leaders Choose Adalbert Medical Technology
             </Heading>
             <Text variant="lead" className="text-slate-600 max-w-2xl mx-auto">
               Our engineering philosophy is built around precision, innovation, uncompromising reliability, advanced technology, and healthcare excellence.
@@ -585,7 +585,7 @@ export default function HomePage() {
                   Turnkey Hospital Network Interoperability
                 </h4>
                 <p className="text-[14.5px] text-slate-600 leading-relaxed">
-                  Every Leonardo Adalbert monitoring console and surgical visualization platform synchronizes directly with enterprise EMR workflows, reducing bedside administrative load.
+                  Every Adalbert Medical Technology monitoring console and surgical visualization platform synchronizes directly with enterprise EMR workflows, reducing bedside administrative load.
                 </p>
               </div>
             </div>
@@ -622,74 +622,74 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* 6.75 EXECUTIVE LEADERSHIP & FOUNDER SPOTLIGHT */}
+      {/* 6.75 CANADIAN R&D FACILITY & OPERATIONS CENTER */}
       <Section spacing="xl" background="default" className="border-t border-slate-200">
         <Container size="xl">
           <div className="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 lg:p-14 shadow-md">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               
-              {/* CEO Portrait Card */}
+              {/* Facility Operations Card */}
               <div className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[4/5] bg-slate-900">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[4/3] bg-slate-900">
                   <Image
-                    src="/ceo.jpeg"
-                    alt="Leonardo Adalbert, Founder and CEO of Leonardo Adalbert Medical Technology"
+                    src="/contact us building.jpg"
+                    alt="Adalbert Medical Technology corporate headquarters and R&D operations facility in Richmond, BC"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#001D3A]/85 via-transparent to-transparent" />
                   
                   <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md text-slate-900 border border-white/40 shadow-lg">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#0066CC] block">
-                      Founder &amp; Chief Executive Officer
+                      Operations Campus
                     </span>
                     <h3 className="text-lg sm:text-xl font-extrabold text-[#003B73]">
-                      Leonardo Adalbert
+                      Richmond Operations Facility
                     </h3>
                     <p className="text-[13px] font-medium text-slate-600 mt-0.5">
-                      Leonardo Adalbert Medical Technology &bull; Richmond, BC
+                      Adalbert Medical Technology &bull; Greater Vancouver, BC
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* CEO Message & Profile Overview */}
+              {/* Facility Overview & Engineering Standards */}
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center gap-2">
                   <Badge variant="secondary">
-                    Executive Leadership
+                    Canadian Facility
                   </Badge>
                   <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                    Message From the CEO
+                    Richmond R&amp;D Campus
                   </span>
                 </div>
 
                 <Heading level="h2" className="text-2xl sm:text-3xl lg:text-4xl text-[#003B73] font-bold leading-snug">
-                  Precision Engineering for the Moments That Matter Most
+                  Advanced Biomedical Engineering &amp; Testing Infrastructure
                 </Heading>
 
                 <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 relative overflow-hidden">
                   <div className="w-1.5 h-full bg-[#0066CC] absolute left-0 top-0 bottom-0" />
-                  <p className="text-[16px] sm:text-[17px] font-medium text-[#003B73] italic leading-relaxed pl-2">
-                    &ldquo;Our commitment at Leonardo Adalbert is straightforward: we design medical technology that surgeons, intensivists, and healthcare leaders can rely upon with absolute confidence in high-acuity environments.&rdquo;
+                  <p className="text-[16px] sm:text-[17px] font-medium text-[#003B73] leading-relaxed pl-2">
+                    Our Richmond campus houses specialized cleanroom prototyping suites, optical spectroscopic alignment benches, and multi-vector electromagnetic compatibility testing chambers operated under strict ISO 13485:2016 quality standards.
                   </p>
                   <div className="pl-2 pt-1 text-[13px] font-bold text-slate-600">
-                    &mdash; <span className="text-slate-900">Leonardo Adalbert</span>, Founder &amp; CEO
+                    Operations Directorate &bull; <span className="text-slate-900">Adalbert Medical Technology Facility</span>
                   </div>
                 </div>
 
                 <Text className="text-slate-700 text-[16.5px] leading-relaxed">
-                  Headquartered in Richmond, Greater Vancouver, Leonardo Adalbert directs our biomedical engineering initiatives, ensuring every telemetry platform, surgical imaging console, and sterilization system meets rigorous clinical and regulatory benchmarks.
+                  Every medical device engineered at our facility undergoes comprehensive environmental stress testing, high-voltage electrical safety validation, and automated software burn-in before hospital delivery.
                 </Text>
 
                 <div className="pt-2 flex flex-wrap items-center gap-4">
                   <Button href="/about" variant="primary" size="md">
-                    <span>Read Executive Profile &amp; Heritage</span>
+                    <span>Tour Our Facility &amp; Infrastructure</span>
                     <ArrowRight className="w-4 h-4 ml-1.5" />
                   </Button>
                   <Button href="/contact" variant="outline" size="md">
-                    <span>Contact Executive Office</span>
+                    <span>Contact Operations Center</span>
                   </Button>
                 </div>
               </div>
@@ -715,7 +715,7 @@ export default function HomePage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] max-w-2xl mx-auto leading-relaxed">
-                Connect with the Leonardo Adalbert engineering and clinical solutions team to discuss medical equipment integration, technical specifications, and custom deployments.
+                Connect with the Adalbert Medical Technology engineering and clinical solutions team to discuss medical equipment integration, technical specifications, and custom deployments.
               </Text>
 
               {/* Direct Contact Bar */}
