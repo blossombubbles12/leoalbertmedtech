@@ -213,72 +213,65 @@ export default function HomePage() {
 
           {/* 4 Rich Technology Cards with Images */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
-            {technologiesData.map((tech) => {
-              const imageMeta = techImages[tech.id] || {
-                src: "/cesar-badilla-miranda-0Fv4M2hSZJU-tech.jpg",
-                alt: tech.title,
-              };
-
-              return (
-                <div
-                  key={tech.id}
-                  className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
-                >
-                  <div>
-                    {/* Card Thumbnail Image */}
-                    <div className="relative h-48 w-full overflow-hidden bg-slate-100">
-                      <Image
-                        src={imageMeta.src}
-                        alt={imageMeta.alt}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
-                      <div className="absolute top-3 left-3">
-                        <span className="px-2.5 py-1 rounded-md bg-[#003B73]/90 backdrop-blur-xs text-white text-[12px] font-bold uppercase tracking-wider">
-                          {tech.category}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 space-y-3">
-                      <h3 className="text-[19px] font-bold text-slate-900 group-hover:text-[#0066CC] transition-colors leading-snug">
-                        {tech.title}
-                      </h3>
-                      <p className="text-[15px] text-slate-600 leading-relaxed">
-                        {tech.summary}
-                      </p>
-
-                      <div className="pt-3 border-t border-slate-100 space-y-2">
-                        <span className="text-[13px] font-bold text-slate-700 block uppercase tracking-wide">
-                          Key Capabilities
-                        </span>
-                        <ul className="space-y-1 text-[14px] text-slate-600">
-                          {tech.capabilities.slice(0, 2).map((cap) => (
-                            <li key={cap.title} className="flex items-center gap-1.5">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-[#0066CC] shrink-0" />
-                              <span className="truncate">{cap.title}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+            {technologiesData.map((tech) => (
+              <div
+                key={tech.id}
+                className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  {/* Card Thumbnail Image */}
+                  <div className="relative h-48 w-full overflow-hidden bg-slate-100">
+                    <Image
+                      src={tech.images.hero}
+                      alt={tech.images.alt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+                    <div className="absolute top-3 left-3">
+                      <span className="px-2.5 py-1 rounded-md bg-[#003B73]/90 backdrop-blur-xs text-white text-[12px] font-bold uppercase tracking-wider">
+                        {tech.category}
+                      </span>
                     </div>
                   </div>
 
-                  <div className="p-6 pt-0">
-                    <Link
-                      href={`/medical-technologies/${tech.slug}`}
-                      className="inline-flex items-center gap-1.5 text-[14.5px] font-bold text-[#0066CC] hover:text-[#003B73] group/link transition-colors"
-                    >
-                      <span>Explore Technology</span>
-                      <ChevronRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                  {/* Content */}
+                  <div className="p-6 space-y-3">
+                    <h3 className="text-[19px] font-bold text-slate-900 group-hover:text-[#0066CC] transition-colors leading-snug">
+                      {tech.title}
+                    </h3>
+                    <p className="text-[15px] text-slate-600 leading-relaxed">
+                      {tech.summary}
+                    </p>
+
+                    <div className="pt-3 border-t border-slate-100 space-y-2">
+                      <span className="text-[13px] font-bold text-slate-700 block uppercase tracking-wide">
+                        Key Capabilities
+                      </span>
+                      <ul className="space-y-1 text-[14px] text-slate-600">
+                        {tech.capabilities.slice(0, 2).map((cap) => (
+                          <li key={cap.title} className="flex items-center gap-1.5">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[#0066CC] shrink-0" />
+                            <span className="truncate">{cap.title}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              );
-            })}
+
+                <div className="p-6 pt-0">
+                  <Link
+                    href={`/medical-technologies/${tech.slug}`}
+                    className="inline-flex items-center gap-1.5 text-[14.5px] font-bold text-[#0066CC] hover:text-[#003B73] group/link transition-colors"
+                  >
+                    <span>Explore Technology</span>
+                    <ChevronRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="mt-12 text-center">
@@ -542,7 +535,94 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* 6.5 EXECUTIVE LEADERSHIP & FOUNDER SPOTLIGHT */}
+      {/* 6.5 CLINICAL DEPLOYMENT & INTEGRATION SHOWCASE (Rich Editorial Showcase) */}
+      <Section spacing="xl" background="slate" className="border-t border-slate-200">
+        <Container size="xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* Left Visual Composition */}
+            <div className="lg:col-span-6 space-y-6">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-[4/3]">
+                  <Image
+                    src="/vitaly-gariev-7Z2Xf8Bb7iM-doctors looking at results.jpg"
+                    alt="Clinical diagnostic evaluation and multi-modality data analysis"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-3 text-white text-[12px] font-bold">
+                    Diagnostic Analysis
+                  </span>
+                </div>
+
+                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-[4/3]">
+                  <Image
+                    src="/cesar-badilla-miranda-0m4ZNiUcFy8-.jpg"
+                    alt="Integrated surgical suite and perioperative telemetry monitoring"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-3 text-white text-[12px] font-bold">
+                    Perioperative OR
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[12.5px] font-bold uppercase tracking-wider text-[#0066CC]">
+                    Clinical Integration Guarantee
+                  </span>
+                  <Badge variant="teal" size="sm">
+                    HL7 FHIR &amp; DICOM
+                  </Badge>
+                </div>
+                <h4 className="text-[17px] font-bold text-[#003B73]">
+                  Turnkey Hospital Network Interoperability
+                </h4>
+                <p className="text-[14.5px] text-slate-600 leading-relaxed">
+                  Every Leonardo Adalbert monitoring console and surgical visualization platform synchronizes directly with enterprise EMR workflows, reducing bedside administrative load.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Editorial Copy */}
+            <div className="lg:col-span-6 space-y-6">
+              <span className="text-[13px] font-bold uppercase tracking-wider text-[#0066CC]">
+                Institutional Reach
+              </span>
+              <Heading level="h2" className="text-3xl sm:text-4xl text-[#003B73] font-bold">
+                Bridging Laboratory Engineering with High-Acuity Patient Care
+              </Heading>
+              
+              <Text className="text-[17px] text-slate-700 leading-relaxed">
+                From our Canadian headquarters in Richmond, BC, our engineering teams collaborate closely with hospital clinical directors, biomedical departments, and operating theatre teams across North America and international healthcare networks.
+              </Text>
+              
+              <Text className="text-[15.5px] text-slate-600 leading-relaxed">
+                We provide end-to-end technical validation, customized interface mapping for hospital IT infrastructures, and comprehensive clinical staff training to ensure frictionless adoption.
+              </Text>
+
+              <div className="pt-2 flex flex-wrap gap-4">
+                <Button href="/solutions" variant="primary" size="md">
+                  <span>Explore Hospital Solutions</span>
+                  <ArrowRight className="w-4 h-4 ml-1.5" />
+                </Button>
+                <Button href="/resources" variant="outline" size="md">
+                  <span>View System Architecture</span>
+                </Button>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </Section>
+
+      {/* 6.75 EXECUTIVE LEADERSHIP & FOUNDER SPOTLIGHT */}
       <Section spacing="xl" background="default" className="border-t border-slate-200">
         <Container size="xl">
           <div className="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 lg:p-14 shadow-md">
@@ -553,7 +633,7 @@ export default function HomePage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[4/5] bg-slate-900">
                   <Image
                     src="/ceo.jpeg"
-                    alt="Leonardo Leo Adalbert, Founder and CEO of Leonardo Adalbert Medical Technology"
+                    alt="Leonardo Adalbert, Founder and CEO of Leonardo Adalbert Medical Technology"
                     fill
                     className="object-cover object-top"
                     sizes="(max-width: 1024px) 100vw, 40vw"
@@ -565,7 +645,7 @@ export default function HomePage() {
                       Founder &amp; Chief Executive Officer
                     </span>
                     <h3 className="text-lg sm:text-xl font-extrabold text-[#003B73]">
-                      Leonardo &quot;Leo&quot; Adalbert
+                      Leonardo Adalbert
                     </h3>
                     <p className="text-[13px] font-medium text-slate-600 mt-0.5">
                       Leonardo Adalbert Medical Technology &bull; Richmond, BC
@@ -595,12 +675,12 @@ export default function HomePage() {
                     &ldquo;Our commitment at Leonardo Adalbert is straightforward: we design medical technology that surgeons, intensivists, and healthcare leaders can rely upon with absolute confidence in high-acuity environments.&rdquo;
                   </p>
                   <div className="pl-2 pt-1 text-[13px] font-bold text-slate-600">
-                    &mdash; <span className="text-slate-900">Leo Adalbert</span>, Founder &amp; CEO
+                    &mdash; <span className="text-slate-900">Leonardo Adalbert</span>, Founder &amp; CEO
                   </div>
                 </div>
 
                 <Text className="text-slate-700 text-[16.5px] leading-relaxed">
-                  Headquartered in Richmond, Greater Vancouver, Leo Adalbert directs our biomedical engineering initiatives, ensuring every telemetry platform, surgical imaging console, and sterilization system meets rigorous clinical and regulatory benchmarks.
+                  Headquartered in Richmond, Greater Vancouver, Leonardo Adalbert directs our biomedical engineering initiatives, ensuring every telemetry platform, surgical imaging console, and sterilization system meets rigorous clinical and regulatory benchmarks.
                 </Text>
 
                 <div className="pt-2 flex flex-wrap items-center gap-4">

@@ -234,7 +234,7 @@ export default function AboutPage() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/90 aspect-[4/5] bg-slate-900">
                 <Image
                   src="/ceo.jpeg"
-                  alt="Leonardo Leo Adalbert, Founder and Chief Executive Officer of Leonardo Adalbert Medical Technology"
+                  alt="Leonardo Adalbert, Founder and Chief Executive Officer of Leonardo Adalbert Medical Technology"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -247,7 +247,7 @@ export default function AboutPage() {
                     Executive Leadership
                   </span>
                   <h3 className="text-xl font-extrabold text-[#003B73]">
-                    Leonardo &quot;Leo&quot; Adalbert
+                    Leonardo Adalbert
                   </h3>
                   <p className="text-[14px] font-medium text-slate-600">
                     Founder &amp; Chief Executive Officer
@@ -273,7 +273,7 @@ export default function AboutPage() {
 
               <div className="space-y-4 text-slate-700 text-[17px] sm:text-[18px] leading-relaxed">
                 <p>
-                  As the Founder and Chief Executive Officer of Leonardo Adalbert Medical Technology, <strong>Leo Adalbert</strong> spearheads the organization&apos;s strategic engineering vision, institutional partnerships, and global deployment of high-acuity medical systems.
+                  As the Founder and Chief Executive Officer of Leonardo Adalbert Medical Technology, <strong>Leonardo Adalbert</strong> spearheads the organization&apos;s strategic engineering vision, institutional partnerships, and global deployment of high-acuity medical systems.
                 </p>
                 <p>
                   Under his leadership, Leonardo Adalbert has evolved into an agile biomedical enterprise in Greater Vancouver, prioritizing submillimeter electromechanical precision, zero-latency clinical telemetry, and uncompromised regulatory integrity across hospital environments.
@@ -288,7 +288,7 @@ export default function AboutPage() {
                 </p>
                 <div className="pl-3 pt-1 text-[13.5px] font-bold text-slate-600 flex items-center gap-2">
                   <span className="text-[#0066CC]">&mdash;</span>
-                  <span>Leo Adalbert, Founder &amp; CEO</span>
+                  <span>Leonardo Adalbert, Founder &amp; CEO</span>
                 </div>
               </div>
 

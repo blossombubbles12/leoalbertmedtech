@@ -140,8 +140,8 @@ export const technologiesData: ExtendedTechnologyPlatform[] = [
     category: "Surgical Systems",
     featured: true,
     images: {
-      hero: "/nappy-chyNMuYCJH8-xray.jpg",
-      clinical: "/rodrigo-porto-vfy71fExF7g-advanced operation.jpg",
+      hero: "/pusen-medical-82GMjgM7qjA-.jpg",
+      clinical: "/cesar-badilla-miranda-0m4ZNiUcFy8-.jpg",
       alt: "Quantum-Spectrum Surgical Optics and 4K endoscopy visualization consoles",
     },
     architectureOverview:
@@ -348,7 +348,7 @@ export const technologiesData: ExtendedTechnologyPlatform[] = [
     featured: false,
     images: {
       hero: "/national-cancer-institute-GcrSgHDrniY-tech.jpg",
-      clinical: "/owen-beard-DK8jXx1B-1c-.jpg",
+      clinical: "/vitaly-gariev-7Z2Xf8Bb7iM-doctors looking at results.jpg",
       alt: "Low-Temperature Gas Plasma Sterilization laboratory chamber and fluidic modules",
     },
     architectureOverview:
