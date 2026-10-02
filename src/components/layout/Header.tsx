@@ -15,7 +15,7 @@ export function Header() {
   const { isScrolled } = useScrollPosition(10);
 
   return (
-    <header className="sticky top-0 z-40 w-full transition-all duration-200">
+    <header className="sticky top-0 z-40 w-full">
       {/* Top Corporate Utility Bar */}
       <div className="hidden lg:block bg-[#00274D] text-slate-300 text-[12.5px] py-2 border-b border-white/10 font-medium">
         <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 flex items-center justify-between">

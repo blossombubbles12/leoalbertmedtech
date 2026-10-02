@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -11,8 +12,13 @@ import { Button } from "@/components/ui/Button";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close menu on route change
   useEffect(() => {
@@ -35,11 +41,14 @@ export function MobileNav() {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      document.body.style.touchAction = "none";
     } else {
       document.body.style.overflow = "unset";
+      document.body.style.touchAction = "unset";
     }
     return () => {
       document.body.style.overflow = "unset";
+      document.body.style.touchAction = "unset";
     };
   }, [isOpen]);
 
@@ -47,33 +56,27 @@ export function MobileNav() {
     setExpandedSection((prev) => (prev === title ? null : title));
   };
 
-  return (
-    <div className="md:hidden">
-      {/* Hamburger Trigger Button */}
-      <button
-        type="button"
-        onClick={() => setIsOpen(true)}
-        className="p-2.5 rounded-lg text-slate-800 hover:bg-slate-100 active:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-[#0066CC] flex items-center justify-center cursor-pointer"
-        aria-label="Open mobile navigation menu"
-        aria-expanded={isOpen}
-      >
-        <Menu className="w-6 h-6 text-slate-900" />
-      </button>
-
-      {/* Full-Screen Backdrop Overlay */}
+  const portalContent = (
+    <div
+      className={cn(
+        "fixed inset-0 z-[999999] md:hidden",
+        isOpen ? "visible" : "invisible pointer-events-none"
+      )}
+      aria-hidden={!isOpen}
+    >
+      {/* 1. Backdrop Overlay */}
       <div
         className={cn(
-          "fixed inset-0 bg-slate-950/70 backdrop-blur-sm transition-opacity duration-300 z-[99999]",
+          "fixed inset-0 bg-slate-950/75 backdrop-blur-xs transition-opacity duration-300",
           isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
         onClick={() => setIsOpen(false)}
-        aria-hidden="true"
       />
 
-      {/* Slide-In Drawer Panel */}
+      {/* 2. Slide-In Drawer Panel */}
       <div
         className={cn(
-          "fixed top-0 right-0 bottom-0 w-full max-w-[340px] sm:max-w-[380px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden z-[100000] border-l border-slate-200 transition-transform duration-300 ease-out transform",
+          "fixed top-0 right-0 bottom-0 w-full max-w-[340px] sm:max-w-[380px] bg-white shadow-2xl flex flex-col justify-between overflow-hidden border-l border-slate-200 transition-transform duration-300 ease-out transform z-10",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -97,7 +100,7 @@ export function MobileNav() {
           <button
             type="button"
             onClick={() => setIsOpen(false)}
-            className="p-2 rounded-lg text-slate-600 hover:text-slate-950 hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-[#0066CC] cursor-pointer"
+            className="p-2 rounded-lg text-slate-700 hover:text-slate-950 hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-[#0066CC] cursor-pointer"
             aria-label="Close navigation menu"
           >
             <X className="w-6 h-6 text-slate-900" />
@@ -270,6 +273,26 @@ export function MobileNav() {
           </Button>
         </div>
       </div>
+    </div>
+  );
+
+  return (
+    <div className="md:hidden">
+      {/* Hamburger Trigger Button */}
+      <button
+        type="button"
+        onClick={() => setIsOpen(true)}
+        className="p-2.5 rounded-lg text-slate-800 hover:bg-slate-100 active:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-[#0066CC] flex items-center justify-center cursor-pointer"
+        aria-label="Open navigation menu"
+        aria-expanded={isOpen}
+      >
+        <Menu className="w-6 h-6 text-slate-900" />
+      </button>
+
+      {/* Render via Portal onto document.body */}
+      {mounted && typeof document !== "undefined"
+        ? createPortal(portalContent, document.body)
+        : null}
     </div>
   );
 }
