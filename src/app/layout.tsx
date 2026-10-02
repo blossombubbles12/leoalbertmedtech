@@ -62,6 +62,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={jakarta.variable}>
       <head>
+        <link rel="icon" href="/logoicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/logoicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logoicon.png" />
         <OrganizationJsonLd />
       </head>
       <body className="min-h-screen flex flex-col antialiased bg-slate-50 text-slate-900 selection:bg-sky-100 selection:text-sky-900">
