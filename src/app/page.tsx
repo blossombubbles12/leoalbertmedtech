@@ -542,6 +542,83 @@ export default function HomePage() {
         </Container>
       </Section>
 
+      {/* 6.5 EXECUTIVE LEADERSHIP & FOUNDER SPOTLIGHT */}
+      <Section spacing="xl" background="default" className="border-t border-slate-200">
+        <Container size="xl">
+          <div className="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 lg:p-14 shadow-md">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              
+              {/* CEO Portrait Card */}
+              <div className="lg:col-span-5 relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[4/5] bg-slate-900">
+                  <Image
+                    src="/ceo.jpeg"
+                    alt="Leonardo Leo Adalbert, Founder and CEO of Leonardo Adalbert Medical Technology"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#001D3A]/85 via-transparent to-transparent" />
+                  
+                  <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md text-slate-900 border border-white/40 shadow-lg">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#0066CC] block">
+                      Founder &amp; Chief Executive Officer
+                    </span>
+                    <h3 className="text-lg sm:text-xl font-extrabold text-[#003B73]">
+                      Leonardo &quot;Leo&quot; Adalbert
+                    </h3>
+                    <p className="text-[13px] font-medium text-slate-600 mt-0.5">
+                      Leonardo Adalbert Medical Technology &bull; Richmond, BC
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CEO Message & Profile Overview */}
+              <div className="lg:col-span-7 space-y-6">
+                <div className="inline-flex items-center gap-2">
+                  <Badge variant="secondary">
+                    Executive Leadership
+                  </Badge>
+                  <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
+                    Message From the CEO
+                  </span>
+                </div>
+
+                <Heading level="h2" className="text-2xl sm:text-3xl lg:text-4xl text-[#003B73] font-bold leading-snug">
+                  Precision Engineering for the Moments That Matter Most
+                </Heading>
+
+                <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 relative overflow-hidden">
+                  <div className="w-1.5 h-full bg-[#0066CC] absolute left-0 top-0 bottom-0" />
+                  <p className="text-[16px] sm:text-[17px] font-medium text-[#003B73] italic leading-relaxed pl-2">
+                    &ldquo;Our commitment at Leonardo Adalbert is straightforward: we design medical technology that surgeons, intensivists, and healthcare leaders can rely upon with absolute confidence in high-acuity environments.&rdquo;
+                  </p>
+                  <div className="pl-2 pt-1 text-[13px] font-bold text-slate-600">
+                    &mdash; <span className="text-slate-900">Leo Adalbert</span>, Founder &amp; CEO
+                  </div>
+                </div>
+
+                <Text className="text-slate-700 text-[16.5px] leading-relaxed">
+                  Headquartered in Richmond, Greater Vancouver, Leo Adalbert directs our biomedical engineering initiatives, ensuring every telemetry platform, surgical imaging console, and sterilization system meets rigorous clinical and regulatory benchmarks.
+                </Text>
+
+                <div className="pt-2 flex flex-wrap items-center gap-4">
+                  <Button href="/about" variant="primary" size="md">
+                    <span>Read Executive Profile &amp; Heritage</span>
+                    <ArrowRight className="w-4 h-4 ml-1.5" />
+                  </Button>
+                  <Button href="/contact" variant="outline" size="md">
+                    <span>Contact Executive Office</span>
+                  </Button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* 7. CORPORATE CONSULTATION CTA BANNER */}
       <Section spacing="xl" background="slate" className="border-t border-slate-200">
         <Container size="xl">

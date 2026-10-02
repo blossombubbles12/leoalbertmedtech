@@ -224,8 +224,111 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      {/* 3. Clinical Research & Medical Advisory Collaboration */}
+      {/* 3. Executive Leadership & Founder Spotlight */}
       <Section spacing="xl" background="slate" className="border-y border-slate-200">
+        <Container size="xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* CEO Portrait */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/90 aspect-[4/5] bg-slate-900">
+                <Image
+                  src="/ceo.jpeg"
+                  alt="Leonardo Leo Adalbert, Founder and Chief Executive Officer of Leonardo Adalbert Medical Technology"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#001D3A]/85 via-transparent to-transparent" />
+                
+                <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-white/95 backdrop-blur-md text-slate-900 border border-white/40 shadow-xl space-y-1">
+                  <span className="text-[12px] font-bold uppercase tracking-wider text-[#0066CC] block">
+                    Executive Leadership
+                  </span>
+                  <h3 className="text-xl font-extrabold text-[#003B73]">
+                    Leonardo &quot;Leo&quot; Adalbert
+                  </h3>
+                  <p className="text-[14px] font-medium text-slate-600">
+                    Founder &amp; Chief Executive Officer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CEO Bio & Vision Statement */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2">
+                <Badge variant="secondary">
+                  Executive Profile
+                </Badge>
+                <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
+                  Richmond Headquarters
+                </span>
+              </div>
+
+              <Heading level="h2" className="text-[#003B73]">
+                Leadership Anchored in Clinical Purpose
+              </Heading>
+
+              <div className="space-y-4 text-slate-700 text-[17px] sm:text-[18px] leading-relaxed">
+                <p>
+                  As the Founder and Chief Executive Officer of Leonardo Adalbert Medical Technology, <strong>Leo Adalbert</strong> spearheads the organization&apos;s strategic engineering vision, institutional partnerships, and global deployment of high-acuity medical systems.
+                </p>
+                <p>
+                  Under his leadership, Leonardo Adalbert has evolved into an agile biomedical enterprise in Greater Vancouver, prioritizing submillimeter electromechanical precision, zero-latency clinical telemetry, and uncompromised regulatory integrity across hospital environments.
+                </p>
+              </div>
+
+              {/* CEO Quote Card */}
+              <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-3 relative overflow-hidden">
+                <div className="w-2 h-full bg-[#0066CC] absolute left-0 top-0 bottom-0" />
+                <p className="text-[16px] sm:text-[17px] font-medium text-[#003B73] italic leading-relaxed pl-3">
+                  &ldquo;In medical technology, every microsecond of telemetry and every micron of surgical optical resolution directly impacts a human life. We build precision instruments so healthcare teams never have to doubt their tools in the moments that matter most.&rdquo;
+                </p>
+                <div className="pl-3 pt-1 text-[13.5px] font-bold text-slate-600 flex items-center gap-2">
+                  <span className="text-[#0066CC]">&mdash;</span>
+                  <span>Leo Adalbert, Founder &amp; CEO</span>
+                </div>
+              </div>
+
+              {/* Key Directives */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                  <ShieldCheck className="w-5 h-5 text-[#0066CC] shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="text-[15px] font-bold text-slate-900">Direct R&amp;D Governance</h4>
+                    <p className="text-[13.5px] text-slate-600 mt-0.5">
+                      Hands-on engineering review of all telemetry, optical, and robotic subsystems.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                  <HeartHandshake className="w-5 h-5 text-[#0066CC] shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="text-[15px] font-bold text-slate-900">Physician Co-Design</h4>
+                    <p className="text-[13.5px] text-slate-600 mt-0.5">
+                      Direct collaboration with practicing surgeons and ICU clinical directors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <Button href="/contact" variant="primary" size="md">
+                  <span>Connect With Executive Office</span>
+                  <ArrowRight className="w-4 h-4 ml-1.5" />
+                </Button>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </Section>
+
+      {/* 4. Clinical Research & Medical Advisory Collaboration */}
+      <Section spacing="xl" background="default">
         <Container size="xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
