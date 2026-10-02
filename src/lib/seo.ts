@@ -48,6 +48,11 @@ export function constructMetadata({
         },
       ],
     },
+    icons: {
+      icon: [{ url: "/logoicon.png", type: "image/png" }],
+      shortcut: "/logoicon.png",
+      apple: "/logoicon.png",
+    },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,

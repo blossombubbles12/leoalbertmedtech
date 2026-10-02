@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} | Advanced Medical Engineering`,
     description: siteConfig.description,
   },
+  icons: {
+    icon: [
+      { url: "/logoicon.png", type: "image/png" },
+    ],
+    shortcut: "/logoicon.png",
+    apple: "/logoicon.png",
+  },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Advanced Medical Engineering`,
