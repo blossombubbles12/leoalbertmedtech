@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { researchData } from "@/data/research";
 import { siteConfig } from "@/config/site";
@@ -17,28 +17,16 @@ export const metadata: Metadata = constructMetadata({
 export default function ResearchPage() {
   return (
     <div className="flex flex-col">
-      {/* 1. Header */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb items={[{ name: "Research", url: "/research" }]} />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="inline-flex items-center gap-2">
-              <Badge variant="secondary">
-                Scientific & Clinical Studies
-              </Badge>
-              <span className="text-[12px] font-mono font-semibold text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                Peer-Reviewed Publications
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-3xl sm:text-4xl lg:text-5xl">
-              Research & Engineering Publications
-            </Heading>
-            <Text variant="lead" className="text-slate-600 max-w-3xl">
-              Biomedical research, clinical methodology papers, and hardware architecture whitepapers authored and peer-reviewed by Adalbert Medical Technology engineering scientists.
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title="Research & Engineering Publications"
+        description="Biomedical research, clinical methodology papers, and hardware architecture whitepapers authored and peer-reviewed by Adalbert Medical Technology engineering scientists."
+        breadcrumbItems={[{ name: "Research", url: "/research" }]}
+        badge="Scientific & Clinical Studies"
+        badgeTag="Peer-Reviewed Publications"
+        imageSrc="/cdc-p33DqVXhWvs-u.jpg"
+        imageAlt="Research & Engineering Publications at Adalbert Medical Technology"
+      />
 
       {/* 2. R&D Overview Feature */}
       <Section spacing="xl" background="default">

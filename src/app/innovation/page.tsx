@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 import { Cpu, Zap, Microscope, ShieldCheck, ArrowRight, CheckCircle2, Activity, Layers, Sparkles, MapPin, Phone } from "lucide-react";
@@ -57,28 +57,16 @@ export default function InnovationPage() {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Hero */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb items={[{ name: "Innovation", url: "/innovation" }]} />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="inline-flex items-center gap-2">
-              <Badge variant="secondary">
-                Research & Digital Health
-              </Badge>
-              <span className="text-[12px] font-mono font-semibold text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                Richmond R&D Hub
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-3xl sm:text-4xl lg:text-5xl">
-              Innovation in Medical Technology & Biomedical Engineering
-            </Heading>
-            <Text variant="lead" className="text-slate-600 max-w-3xl">
-              Pioneering connected medical devices, intelligent physiological telemetry, and advanced robotic-assisted surgical instrumentation engineered in Richmond, Vancouver, Canada.
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title="Innovation in Medical Technology & Biomedical Engineering"
+        description="Pioneering connected medical devices, intelligent physiological telemetry, and advanced robotic-assisted surgical instrumentation engineered in Richmond, Vancouver, Canada."
+        breadcrumbItems={[{ name: "Innovation", url: "/innovation" }]}
+        badge="Research & Digital Health"
+        badgeTag="Richmond R&D Hub"
+        imageSrc="/national-cancer-institute-GcrSgHDrniY-tech.jpg"
+        imageAlt="Innovation in Medical Technology & Biomedical Engineering"
+      />
 
       {/* 2. Hero Showcase Section */}
       <Section spacing="xl" background="default">

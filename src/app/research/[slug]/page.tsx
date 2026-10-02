@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { getAllResearch, getResearchBySlug } from "@/data/research";
 import { siteConfig } from "@/config/site";
@@ -65,33 +65,19 @@ export default async function ResearchDetailPage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Hero */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb
-            items={[
-              { name: "Research", url: "/research" },
-              { name: item.title, url: `/research/${item.slug}` },
-            ]}
-          />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="primary" size="sm">
-                {item.category}
-              </Badge>
-              <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                Published: {item.publicationDate}
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-2xl sm:text-3xl lg:text-4xl leading-snug">
-              {item.title}
-            </Heading>
-            <p className="text-[15px] text-slate-600 font-medium">
-              Authors: <span className="text-slate-900 font-semibold">{item.authors.join(", ")}</span> &bull; {item.journalOrConference}
-            </p>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title={item.title}
+        description={`Authors: ${item.authors.join(", ")} • ${item.journalOrConference}`}
+        breadcrumbItems={[
+          { name: "Research", url: "/research" },
+          { name: item.title, url: `/research/${item.slug}` },
+        ]}
+        badge={item.category}
+        badgeTag={`Published: ${item.publicationDate}`}
+        imageSrc="/vitaly-gariev-7Z2Xf8Bb7iM-doctors looking at results.jpg"
+        imageAlt={item.title}
+      />
 
       {/* 2. Full-Width Visual Hero Image Banner */}
       <Section spacing="md" background="default" className="pt-8 pb-0">

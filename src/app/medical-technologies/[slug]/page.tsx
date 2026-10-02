@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { getAllTechnologies, getTechnologyBySlug } from "@/data/technologies";
 import { siteConfig } from "@/config/site";
@@ -71,38 +71,19 @@ export default async function TechnologyDetailPage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Hero */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb
-            items={[
-              { name: "Medical Technologies", url: "/medical-technologies" },
-              { name: tech.title, url: `/medical-technologies/${tech.slug}` },
-            ]}
-          />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="primary" size="sm">
-                {tech.category}
-              </Badge>
-              {tech.featured && (
-                <Badge variant="teal" size="sm">
-                  Core Engineering Platform
-                </Badge>
-              )}
-              <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                Richmond R&D Laboratory
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-3xl sm:text-4xl lg:text-5xl">
-              {tech.title}
-            </Heading>
-            <Text variant="lead" className="text-slate-600 max-w-3xl">
-              {tech.headline}
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title={tech.title}
+        description={tech.headline}
+        breadcrumbItems={[
+          { name: "Medical Technologies", url: "/medical-technologies" },
+          { name: tech.title, url: `/medical-technologies/${tech.slug}` },
+        ]}
+        badge={tech.category}
+        badgeTag={tech.featured ? "Core Engineering Platform" : "Richmond R&D Hub"}
+        imageSrc={tech.images.hero}
+        imageAlt={tech.images.alt}
+      />
 
       {/* 2. Full-Width Visual Hero Image Banner */}
       <Section spacing="md" background="default" className="pt-8 pb-0">

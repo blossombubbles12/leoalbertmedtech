@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 import { companyData } from "@/data/company";
@@ -89,28 +89,16 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Hero */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb items={[{ name: "About Us", url: "/about" }]} />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="inline-flex items-center gap-2">
-              <Badge variant="secondary">
-                Biomedical Engineering Facility
-              </Badge>
-              <span className="text-[12px] font-mono font-semibold text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                Richmond, BC, Canada
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-3xl sm:text-4xl lg:text-5xl">
-              Engineering the Future of Global Medical Technology
-            </Heading>
-            <Text variant="lead" className="text-slate-600 max-w-3xl">
-              Adalbert Medical Technology is an engineering-driven healthcare facility dedicated to designing, manufacturing, and deploying precision medical hardware, surgical visualization systems, and physiological telemetry monitors.
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title="Engineering the Future of Global Medical Technology"
+        description="Adalbert Medical Technology is an engineering-driven healthcare facility dedicated to designing, manufacturing, and deploying precision medical hardware, surgical visualization systems, and physiological telemetry monitors."
+        breadcrumbItems={[{ name: "About Us", url: "/about" }]}
+        badge="Biomedical Engineering Facility"
+        badgeTag="Richmond, BC, Canada"
+        imageSrc="/contact us building.jpg"
+        imageAlt="Adalbert Medical Technology headquarters and operations facility in Richmond, BC"
+      />
 
       {/* 2. Facility Heritage & Headquarters Feature */}
       <Section spacing="xl" background="default">

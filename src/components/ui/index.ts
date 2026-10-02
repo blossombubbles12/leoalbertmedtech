@@ -10,3 +10,4 @@ export * from "./ImageWrapper";
 export * from "./Breadcrumb";
 export * from "./Modal";
 export * from "./Accordion";
+export * from "./PageHeader";

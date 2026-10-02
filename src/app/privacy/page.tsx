@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Container, Section, Heading, Text, Breadcrumb } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 
@@ -11,15 +11,20 @@ export const metadata: Metadata = constructMetadata({
 
 export default function PrivacyPage() {
   return (
-    <Section spacing="lg">
-      <Container size="md">
-        <Breadcrumb items={[{ name: "Privacy Policy", url: "/privacy" }]} />
-        <div className="mt-8 space-y-6">
-          <Heading level="h1">Privacy Policy</Heading>
-          <Text variant="lead">
-            {siteConfig.legalName} is committed to protecting the privacy, confidentiality, and security of our clients, clinical partners, and website visitors.
-          </Text>
-          <div className="prose prose-slate max-w-none space-y-4 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+    <div className="flex flex-col">
+      <PageHeader
+        title="Privacy Policy"
+        description={`${siteConfig.legalName} is committed to protecting the privacy, confidentiality, and security of our clients, clinical partners, and website visitors.`}
+        breadcrumbItems={[{ name: "Privacy Policy", url: "/privacy" }]}
+        badge="Legal & Compliance"
+        badgeTag="Data Governance"
+        imageSrc="/piron-guillaume-U4FyCp3-KzY-Hero.jpg"
+        imageAlt="Privacy Policy and Data Governance"
+      />
+      <Section spacing="lg" background="default">
+        <Container size="md">
+          <div className="space-y-6">
+            <div className="prose prose-slate max-w-none space-y-4 text-slate-600 dark:text-slate-300 text-base leading-relaxed">
             <h2 className="text-lg font-semibold text-slate-900 dark:text-white pt-4">
               1. Information Collection & Purpose
             </h2>
@@ -41,6 +46,7 @@ export default function PrivacyPage() {
           </div>
         </div>
       </Container>
-    </Section>
+      </Section>
+    </div>
   );
 }

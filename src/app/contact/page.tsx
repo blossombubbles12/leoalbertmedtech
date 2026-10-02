@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Container, Section, Heading, Text, Breadcrumb, Badge } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 import { ContactForm } from "@/components/forms/ContactForm";
@@ -16,23 +16,16 @@ export const metadata: Metadata = constructMetadata({
 export default function ContactPage() {
   return (
     <div className="flex flex-col">
-      {/* Header */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb items={[{ name: "Contact", url: "/contact" }]} />
-          <div className="mt-6 max-w-3xl space-y-3">
-            <Badge variant="secondary">
-              Engineering & Facility Inquiries
-            </Badge>
-            <Heading level="h1" className="text-[#003B73]">
-              Contact Adalbert Medical Technology
-            </Heading>
-            <Text variant="lead" className="text-slate-600">
-              Connect directly with our biomedical engineering specialists, clinical integration consultants, and operations campus in Richmond, Greater Vancouver, Canada.
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* Header Hero with Gradient & Image */}
+      <PageHeader
+        title="Contact Adalbert Medical Technology"
+        description="Connect directly with our biomedical engineering specialists, clinical integration consultants, and operations campus in Richmond, Greater Vancouver, Canada."
+        breadcrumbItems={[{ name: "Contact", url: "/contact" }]}
+        badge="Engineering & Facility Inquiries"
+        badgeTag="Richmond Headquarters"
+        imageSrc="/contact us building.jpg"
+        imageAlt="Adalbert Medical Technology Canadian Operations Campus"
+      />
 
       <Section spacing="xl" background="default">
         <Container size="xl">

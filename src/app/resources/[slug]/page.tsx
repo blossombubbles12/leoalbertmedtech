@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { getAllResources, getResourceBySlug } from "@/data/resources";
 import { siteConfig } from "@/config/site";
@@ -58,36 +58,19 @@ export default async function ResourceDetailPage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Hero */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb
-            items={[
-              { name: "Resources", url: "/resources" },
-              { name: item.title, url: `/resources/${item.slug}` },
-            ]}
-          />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="secondary" size="sm">
-                {item.type}
-              </Badge>
-              <Badge variant="outline" size="sm">
-                {item.category}
-              </Badge>
-              <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                {item.version} &bull; {item.fileSize}
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-2xl sm:text-3xl lg:text-4xl leading-snug">
-              {item.title}
-            </Heading>
-            <Text variant="lead" className="text-slate-600 max-w-3xl">
-              {item.summary}
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title={item.title}
+        description={item.summary}
+        breadcrumbItems={[
+          { name: "Resources", url: "/resources" },
+          { name: item.title, url: `/resources/${item.slug}` },
+        ]}
+        badge={item.type}
+        badgeTag={`${item.category} • ${item.version}`}
+        imageSrc={item.image}
+        imageAlt={item.imageAlt}
+      />
 
       {/* 2. Full-Width Visual Hero Image Banner */}
       <Section spacing="md" background="default" className="pt-8 pb-0">

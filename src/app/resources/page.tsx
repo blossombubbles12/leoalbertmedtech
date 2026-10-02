@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Container, Section, Heading, Text, Breadcrumb, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Breadcrumb, Badge, Button, PageHeader } from "@/components/ui";
 import { constructMetadata } from "@/lib/seo";
 import { resourcesData } from "@/data/resources";
 import { siteConfig } from "@/config/site";
@@ -34,28 +34,16 @@ export default function ResourcesPage() {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Hero */}
-      <Section spacing="lg" background="slate" className="border-b border-slate-200">
-        <Container size="xl">
-          <Breadcrumb items={[{ name: "Resources", url: "/resources" }]} />
-          <div className="mt-6 max-w-4xl space-y-4">
-            <div className="inline-flex items-center gap-2">
-              <Badge variant="secondary">
-                Technical Library
-              </Badge>
-              <span className="text-[12px] font-mono font-semibold text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                Official Engineering Documentation
-              </span>
-            </div>
-            <Heading level="h1" className="text-[#003B73] text-3xl sm:text-4xl lg:text-5xl">
-              Technical Documentation & Datasheets
-            </Heading>
-            <Text variant="lead" className="text-slate-600 max-w-3xl">
-              Access engineering specifications, clinical integration guides, regulatory compliance notices, and system architecture indices maintained by Adalbert Medical Technology.
-            </Text>
-          </div>
-        </Container>
-      </Section>
+      {/* 1. Header Hero with Gradient & Image */}
+      <PageHeader
+        title="Technical Documentation & Datasheets"
+        description="Access engineering specifications, clinical integration guides, regulatory compliance notices, and system architecture indices maintained by Adalbert Medical Technology."
+        breadcrumbItems={[{ name: "Resources", url: "/resources" }]}
+        badge="Technical Library"
+        badgeTag="Official Engineering Documentation"
+        imageSrc="/cesar-badilla-miranda-0m4ZNiUcFy8-.jpg"
+        imageAlt="Technical Documentation and Engineering Datasheets"
+      />
 
       {/* 2. Editorial Highlight Strip */}
       <Section spacing="md" background="default" className="border-b border-slate-100">
