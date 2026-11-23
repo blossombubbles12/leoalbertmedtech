@@ -84,8 +84,8 @@ export const siteConfig: SiteConfig = {
     "Richmond Vancouver Medical Tech",
   ],
   contact: {
-    phone: "+16042438397",
-    phoneFormatted: "+1 604 243 8397",
+    phone: "+18472683752",
+    phoneFormatted: "+1 847 268 3752",
     email: "info@leoalbermedtech.com",
     supportEmail: "support@leoalbermedtech.com",
     address: {
