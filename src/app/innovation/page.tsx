@@ -7,9 +7,9 @@ import { siteConfig } from "@/config/site";
 import { Cpu, Zap, Microscope, ShieldCheck, ArrowRight, CheckCircle2, Activity, Layers, Sparkles, MapPin, Phone } from "lucide-react";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Innovation & Digital Health | Biomedical R&D Headquarters Richmond, BC",
+  title: "Innovation & Digital Health | Biomedical R&D Headquarters Chicago, IL",
   description:
-    "Explore how Adalbert Medical Technology advances healthcare through digital telemetry, surgical robotics, and biomedical research in Richmond, Vancouver, Canada.",
+    "Explore how Adalbert Medical Technology advances healthcare through digital telemetry, surgical robotics, and biomedical research in Chicago, Illinois, USA.",
   canonicalUrlRelative: "/innovation",
 });
 
@@ -41,7 +41,7 @@ export default function InnovationPage() {
     {
       step: "01",
       title: "Clinical Need Identification",
-      desc: "Our Richmond biomedical team works directly alongside operating room surgeons and ICU intensivists to identify acute workflow bottlenecks.",
+      desc: "Our Chicago biomedical team works directly alongside operating room surgeons and ICU intensivists to identify acute workflow bottlenecks.",
     },
     {
       step: "02",
@@ -51,7 +51,7 @@ export default function InnovationPage() {
     {
       step: "03",
       title: "Regulatory Validation & Deployment",
-      desc: "Comprehensive testing under ISO 13485:2016, IEC 60601-1 electrical safety standards, and Health Canada medical device licensing guidelines.",
+      desc: "Comprehensive testing under ISO 13485:2016, IEC 60601-1 electrical safety standards, and FDA medical device licensing guidelines.",
     },
   ];
 
@@ -60,10 +60,10 @@ export default function InnovationPage() {
       {/* 1. Header Hero with Gradient & Image */}
       <PageHeader
         title="Innovation in Medical Technology & Biomedical Engineering"
-        description="Pioneering connected medical devices, intelligent physiological telemetry, and advanced robotic-assisted surgical instrumentation engineered in Richmond, Vancouver, Canada."
+        description="Pioneering connected medical devices, intelligent physiological telemetry, and advanced robotic-assisted surgical instrumentation engineered in Chicago, Illinois, USA."
         breadcrumbItems={[{ name: "Innovation", url: "/innovation" }]}
         badge="Research & Digital Health"
-        badgeTag="Richmond R&D Hub"
+        badgeTag="Chicago R&D Hub"
         imageSrc="/national-cancer-institute-GcrSgHDrniY-tech.jpg"
         imageAlt="Innovation in Medical Technology & Biomedical Engineering"
       />
@@ -83,7 +83,7 @@ export default function InnovationPage() {
                 At Adalbert Medical Technology, innovation is guided by practical clinical requirements. We engineer hardware and embedded software that improve diagnostic accuracy and streamline operating room workflows.
               </Text>
               <Text className="text-[16px] text-slate-600 leading-relaxed">
-                Our Richmond R&D center conducts rapid prototyping, electromechanical stress-testing, and algorithmic signal validation to ensure every system achieves clinical-grade dependability before hospital deployment.
+                Our Chicago R&D center conducts rapid prototyping, electromechanical stress-testing, and algorithmic signal validation to ensure every system achieves clinical-grade dependability before hospital deployment.
               </Text>
 
               <div className="space-y-3 pt-2">
@@ -227,7 +227,7 @@ export default function InnovationPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                We collaborate with university medical centers, research hospitals, and clinical trial groups across Canada and internationally to validate innovative biomedical technologies.
+                We collaborate with university medical centers, research hospitals, and clinical trial groups across the United States and internationally to validate innovative biomedical technologies.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

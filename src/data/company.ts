@@ -5,10 +5,12 @@ export const companyData: CompanyInfo = {
   legalName: "Adalbert Medical Technology Inc.",
   tagline: "Biomedical Engineering & High-Precision Medical Technology Facility",
   headquarters: {
-    city: "Richmond",
-    region: "Vancouver, British Columbia",
-    country: "Canada",
-    display: "Richmond, Vancouver, BC, Canada",
+    city: "Chicago",
+    region: "Illinois",
+    country: "United States",
+    addressLine: "303 E Superior St",
+    postalCode: "60611",
+    display: "303 E Superior St, Chicago, IL 60611",
   },
   contact: {
     phone: "+18472683752",

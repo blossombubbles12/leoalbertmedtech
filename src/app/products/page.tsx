@@ -228,7 +228,7 @@ export default function ProductsPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Connect with our product specialists in Richmond, BC to receive detailed product datasheets, user manuals, and institutional pricing.
+                Connect with our product specialists in Chicago, IL to receive detailed product datasheets, user manuals, and institutional pricing.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

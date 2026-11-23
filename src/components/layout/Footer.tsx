@@ -25,7 +25,7 @@ export function Footer() {
             </div>
 
             <p className="text-[15px] text-slate-200 leading-relaxed max-w-sm">
-              Global medical engineering and healthcare technology systems designed and engineered with clinical precision. Headquartered in Richmond, Vancouver, Canada.
+              Global medical engineering and healthcare technology systems designed and engineered with clinical precision. Headquartered in Chicago, Illinois, USA.
             </p>
 
             <div className="space-y-3 text-[14px] text-slate-300 pt-1">
@@ -86,7 +86,7 @@ export function Footer() {
             <ShieldCheck className="w-4 h-4 text-[#38BDF8]" />
             <span>Precision Engineering &bull; High-Acuity Medical Systems</span>
           </div>
-          <span className="text-slate-300">Richmond, Vancouver, BC &bull; Global Deployments</span>
+          <span className="text-slate-300">Chicago, IL &bull; Global Deployments</span>
         </div>
 
         {/* Bottom Bar */}

@@ -7,9 +7,9 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Contact & Inquiries | Canadian Operations Campus Richmond, BC",
+  title: "Contact & Inquiries | US Operations Campus Chicago, IL",
   description:
-    "Contact Adalbert Medical Technology in Richmond, Vancouver, Canada for engineering inquiries, clinical support, and partnerships.",
+    "Contact Adalbert Medical Technology in Chicago, Illinois, USA for engineering inquiries, clinical support, and partnerships.",
   canonicalUrlRelative: "/contact",
 });
 
@@ -19,12 +19,12 @@ export default function ContactPage() {
       {/* Header Hero with Gradient & Image */}
       <PageHeader
         title="Contact Adalbert Medical Technology"
-        description="Connect directly with our biomedical engineering specialists, clinical integration consultants, and operations campus in Richmond, Greater Vancouver, Canada."
+        description="Connect directly with our biomedical engineering specialists, clinical integration consultants, and operations campus in Chicago, Illinois, USA."
         breadcrumbItems={[{ name: "Contact", url: "/contact" }]}
         badge="Engineering & Facility Inquiries"
-        badgeTag="Richmond Headquarters"
+        badgeTag="Chicago Headquarters"
         imageSrc="/contact us building.jpg"
-        imageAlt="Adalbert Medical Technology Canadian Operations Campus"
+        imageAlt="Adalbert Medical Technology US Operations Campus"
       />
 
       <Section spacing="xl" background="default">
@@ -36,7 +36,7 @@ export default function ContactPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-[16/10]">
                 <Image
                   src="/contact us building.jpg"
-                  alt="Adalbert Medical Technology headquarters and operations facility in Richmond, BC"
+                  alt="Adalbert Medical Technology headquarters and operations facility in Chicago, IL"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -48,10 +48,10 @@ export default function ContactPage() {
                   Direct Channels
                 </span>
                 <Heading level="h2" className="text-2xl font-bold text-[#003B73]">
-                  Canadian Headquarters
+                  US Headquarters
                 </Heading>
                 <p className="text-[15px] text-slate-600 leading-relaxed">
-                  Our Richmond headquarters oversees technical inquiries, clinical evaluations, and international partner consultations.
+                  Our Chicago headquarters oversees technical inquiries, clinical evaluations, and international partner consultations.
                 </p>
               </div>
 

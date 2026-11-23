@@ -280,10 +280,10 @@ export default async function ProductDetailPage({ params }: Props) {
                 Lifecycle & Support
               </span>
               <Heading level="h2" className="text-[#003B73]">
-                Maintenance, Calibration & Canadian Support
+                Maintenance, Calibration & US Support
               </Heading>
               <Text className="text-slate-600 text-[16px]">
-                Direct factory calibration, spare parts availability, and 24/7 technical hotline support from our Richmond, BC campus.
+                Direct factory calibration, spare parts availability, and 24/7 technical hotline support from our Chicago, IL campus.
               </Text>
 
               <div className="space-y-4 pt-2">
@@ -349,7 +349,7 @@ export default async function ProductDetailPage({ params }: Props) {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Connect with our clinical equipment advisors in Richmond, BC to discuss institutional discounts, hospital evaluation trials, or custom hardware modifications.
+                Connect with our clinical equipment advisors in Chicago, IL to discuss institutional discounts, hospital evaluation trials, or custom hardware modifications.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

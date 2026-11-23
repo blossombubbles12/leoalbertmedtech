@@ -312,7 +312,7 @@ export default async function SolutionDetailPage({ params }: Props) {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Connect with our solutions engineering team in Richmond, BC to arrange a facility review, room planning consultation, and system deployment timeline.
+                Connect with our solutions engineering team in Chicago, IL to arrange a facility review, room planning consultation, and system deployment timeline.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

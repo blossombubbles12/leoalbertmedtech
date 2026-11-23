@@ -37,14 +37,14 @@ export function constructMetadata({
       description,
       url: canonicalUrl,
       siteName: siteConfig.name,
-      locale: "en_CA",
+      locale: "en_US",
       type: "website",
       images: [
         {
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: `${siteConfig.name} - Richmond, Vancouver, Canada`,
+          alt: `${siteConfig.name} - Chicago, Illinois, USA`,
         },
       ],
     },

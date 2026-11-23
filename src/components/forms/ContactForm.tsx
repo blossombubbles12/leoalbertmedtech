@@ -27,7 +27,7 @@ export function ContactForm() {
           Inquiry Successfully Transmitted
         </h3>
         <p className="text-xs text-emerald-700 max-w-md mx-auto leading-relaxed">
-          Thank you. Your technical requirements have been forwarded to our engineering and clinical team in Richmond, British Columbia. An engineering associate will review and respond within 1 business day.
+          Thank you. Your technical requirements have been forwarded to our engineering and clinical team in Chicago, Illinois. An engineering associate will review and respond within 1 business day.
         </p>
         <button
           type="button"

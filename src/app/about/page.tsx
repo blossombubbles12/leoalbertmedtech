@@ -28,7 +28,7 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "About Us | Facility Profile, Heritage & Biomedical Engineering Mission",
   description:
-    "Learn about Adalbert Medical Technology, our Richmond operations campus, biomedical engineering cleanrooms, research laboratories, and clinical mission.",
+    "Learn about Adalbert Medical Technology, our Chicago operations campus, biomedical engineering cleanrooms, research laboratories, and clinical mission.",
   canonicalUrlRelative: "/about",
 });
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
     {
       title: "Uncompromising Integrity",
       description:
-        "Transparent engineering specifications, dependable technical documentation, and direct access to our Canadian engineering headquarters.",
+        "Transparent engineering specifications, dependable technical documentation, and direct access to our US engineering headquarters.",
       icon: HeartHandshake,
     },
   ];
@@ -95,9 +95,9 @@ export default function AboutPage() {
         description="Adalbert Medical Technology is an engineering-driven healthcare facility dedicated to designing, manufacturing, and deploying precision medical hardware, surgical visualization systems, and physiological telemetry monitors."
         breadcrumbItems={[{ name: "About Us", url: "/about" }]}
         badge="Biomedical Engineering Facility"
-        badgeTag="Richmond, BC, Canada"
+        badgeTag="Chicago, IL, USA"
         imageSrc="/contact us building.jpg"
-        imageAlt="Adalbert Medical Technology headquarters and operations facility in Richmond, BC"
+        imageAlt="Adalbert Medical Technology headquarters and operations facility in Chicago, IL"
       />
 
       {/* 2. Facility Heritage & Headquarters Feature */}
@@ -111,12 +111,12 @@ export default function AboutPage() {
                 Institutional Background & Facility
               </span>
               <Heading level="h2" className="text-[#003B73]">
-                Advancing Healthcare Systems From British Columbia
+                Advancing Healthcare Systems From Illinois
               </Heading>
               
               <div className="space-y-4 text-slate-700 leading-relaxed text-[17px] sm:text-[18px]">
                 <p>
-                  Headquartered in Richmond, Greater Vancouver, <strong>{siteConfig.name}</strong> operates a comprehensive biomedical engineering and manufacturing facility dedicated to bridging cutting-edge physical sciences with intuitive clinical practicality.
+                  Headquartered in Chicago, Illinois, <strong>{siteConfig.name}</strong> operates a comprehensive biomedical engineering and manufacturing facility dedicated to bridging cutting-edge physical sciences with intuitive clinical practicality.
                 </p>
                 <p>
                   Over years of focused engineering, our multi-disciplinary teams in biomedical instrumentation, optical physics, and embedded software have developed proprietary hardware architectures that power acute surgical suites, critical care intensive wards, and diagnostic research laboratories.
@@ -155,7 +155,7 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[4/3] bg-slate-100">
                 <Image
                   src="/contact us building.jpg"
-                  alt="Adalbert Medical Technology corporate headquarters and operations facility in Richmond, BC"
+                  alt="Adalbert Medical Technology corporate headquarters and operations facility in Chicago, IL"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -163,10 +163,10 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#001D3A]/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="text-[11.5px] font-bold uppercase tracking-wider text-sky-300 block">
-                    Canadian Operations Center
+                    US Operations Center
                   </span>
                   <p className="text-[14px] font-semibold text-white mt-0.5">
-                    Richmond R&amp;D, Cleanrooms &amp; Engineering Labs
+                    Chicago R&amp;D, Cleanrooms &amp; Engineering Labs
                   </p>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function AboutPage() {
                     <span className="font-bold text-[15px]">Facility Overview</span>
                   </div>
                   <Badge variant="primary" className="bg-sky-500/20 text-sky-300 border-sky-400/30 text-[11px]">
-                    Greater Vancouver
+                    Chicago, Illinois
                   </Badge>
                 </div>
 
@@ -250,7 +250,7 @@ export default function AboutPage() {
                   Executive Profile
                 </Badge>
                 <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                  Richmond Headquarters
+                  Chicago Headquarters
                 </span>
               </div>
 
@@ -263,7 +263,7 @@ export default function AboutPage() {
                   As the Founder and Chief Executive Officer of Adalbert Medical Technology, <strong>Leonardo Adalbert</strong> guides the organization&apos;s strategic engineering vision, institutional partnerships, and global deployment of high-acuity medical systems.
                 </p>
                 <p>
-                  Under his direction, the facility has evolved into an agile biomedical enterprise in Greater Vancouver, prioritizing submillimeter electromechanical precision, zero-latency clinical telemetry, and uncompromised regulatory integrity across hospital environments.
+                  Under his direction, the facility has evolved into an agile biomedical enterprise in Chicago, Illinois, prioritizing submillimeter electromechanical precision, zero-latency clinical telemetry, and uncompromised regulatory integrity across hospital environments.
                 </p>
               </div>
 
@@ -397,7 +397,7 @@ export default function AboutPage() {
               </Heading>
 
               <Text className="text-slate-700 text-[17px] sm:text-[18px] leading-relaxed">
-                Our Richmond R&D infrastructure encompasses rapid prototyping cleanrooms, optical calibration benches, electromagnetic compatibility testing chambers, and simulated clinical environments.
+                Our Chicago R&D infrastructure encompasses rapid prototyping cleanrooms, optical calibration benches, electromagnetic compatibility testing chambers, and simulated clinical environments.
               </Text>
 
               <Text className="text-slate-600 text-[16px] leading-relaxed">
@@ -538,7 +538,7 @@ export default function AboutPage() {
             
             <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">
               <Badge variant="primary" className="bg-white/10 text-sky-300 border border-white/20">
-                Richmond Operations Campus
+                Chicago Operations Campus
               </Badge>
 
               <Heading level="h2" className="text-3xl sm:text-4xl text-white font-extrabold tracking-tight">
@@ -546,7 +546,7 @@ export default function AboutPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed">
-                Whether you are a hospital network seeking custom clinical integration or an international distributor exploring partnership opportunities, our Canadian facility and engineering teams are ready to collaborate.
+                Whether you are a hospital network seeking custom clinical integration or an international distributor exploring partnership opportunities, our US facility and engineering teams are ready to collaborate.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium">

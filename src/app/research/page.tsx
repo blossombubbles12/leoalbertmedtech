@@ -8,9 +8,9 @@ import { siteConfig } from "@/config/site";
 import { BookOpen, FileText, ArrowRight, ExternalLink, Microscope, CheckCircle2, Phone, MapPin } from "lucide-react";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Research & Publications | Clinical Engineering Studies Richmond, BC",
+  title: "Research & Publications | Clinical Engineering Studies Chicago, IL",
   description:
-    "Scientific research, clinical studies, and biomedical engineering papers from Adalbert Medical Technology in Richmond, Greater Vancouver, Canada.",
+    "Scientific research, clinical studies, and biomedical engineering papers from Adalbert Medical Technology in Chicago, Illinois, USA.",
   canonicalUrlRelative: "/research",
 });
 
@@ -147,7 +147,7 @@ export default function ResearchPage() {
                         <span>Request Full PDF</span>
                       </Button>
                     </div>
-                    <span className="text-[13px] text-slate-500 font-medium">Richmond R&D Laboratory Publication</span>
+                    <span className="text-[13px] text-slate-500 font-medium">Chicago R&D Laboratory Publication</span>
                   </div>
                 </div>
               );

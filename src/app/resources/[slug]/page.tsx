@@ -196,7 +196,7 @@ export default async function ResourceDetailPage({ params }: Props) {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Connect with our technical support team in Richmond, BC to receive encrypted PDF copies, CAD step models, or API integration documentation.
+                Connect with our technical support team in Chicago, IL to receive encrypted PDF copies, CAD step models, or API integration documentation.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

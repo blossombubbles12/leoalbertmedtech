@@ -84,8 +84,8 @@ export const productsData: ExtendedProduct[] = [
         description: "Automated digital self-calibration routines with downloadable verification reports.",
       },
       {
-        title: "Canadian Engineering Support",
-        description: "Direct technical support, spare parts, and loaner units dispatched from Richmond, BC.",
+        title: "US Engineering Support",
+        description: "Direct technical support, spare parts, and loaner units dispatched from Chicago, IL.",
       },
     ],
     clinicalApplications: [

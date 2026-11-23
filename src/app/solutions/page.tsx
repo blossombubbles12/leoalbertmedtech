@@ -212,7 +212,7 @@ export default function SolutionsPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Our solutions engineering group in Richmond, BC assists hospital directors, clinical engineers, and surgical teams with turnkey equipment planning and workflow optimization.
+                Our solutions engineering group in Chicago, IL assists hospital directors, clinical engineers, and surgical teams with turnkey equipment planning and workflow optimization.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

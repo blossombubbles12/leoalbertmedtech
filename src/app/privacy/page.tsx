@@ -35,7 +35,7 @@ export default function PrivacyPage() {
               2. Data Protection & Jurisdictional Compliance
             </h2>
             <p>
-              Operating from Richmond, British Columbia, Canada, our data governance policies adhere to applicable Canadian and international data protection regulations.
+              Operating from Chicago, Illinois, USA, our data governance policies adhere to applicable US and international data protection regulations.
             </p>
             <h2 className="text-lg font-semibold text-slate-900 dark:text-white pt-4">
               3. Contact Information

@@ -200,7 +200,7 @@ export default async function ResearchDetailPage({ params }: Props) {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Connect with our clinical researchers in Richmond, BC to request raw study data, collaborative clinical trial protocols, or citation permissions.
+                Connect with our clinical researchers in Chicago, IL to request raw study data, collaborative clinical trial protocols, or citation permissions.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

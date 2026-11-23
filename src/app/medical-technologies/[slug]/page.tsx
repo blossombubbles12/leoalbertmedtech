@@ -80,7 +80,7 @@ export default async function TechnologyDetailPage({ params }: Props) {
           { name: tech.title, url: `/medical-technologies/${tech.slug}` },
         ]}
         badge={tech.category}
-        badgeTag={tech.featured ? "Core Engineering Platform" : "Richmond R&D Hub"}
+        badgeTag={tech.featured ? "Core Engineering Platform" : "Chicago R&D Hub"}
         imageSrc={tech.images.hero}
         imageAlt={tech.images.alt}
       />
@@ -374,7 +374,7 @@ export default async function TechnologyDetailPage({ params }: Props) {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Consult with our biomedical engineering team in Richmond, BC for technical validation dossiers, integration protocols, and evaluation units.
+                Consult with our biomedical engineering team in Chicago, IL for technical validation dossiers, integration protocols, and evaluation units.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

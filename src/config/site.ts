@@ -72,7 +72,7 @@ export const siteConfig: SiteConfig = {
   domain: "leoalbermedtech.com",
   url: "https://leoalbermedtech.com",
   description:
-    "Adalbert Medical Technology operates high-precision biomedical engineering and manufacturing facilities in Richmond, Vancouver, Canada, developing advanced clinical hardware, surgical optics, and telemetry systems.",
+    "Adalbert Medical Technology operates high-precision biomedical engineering and manufacturing facilities in Chicago, Illinois, USA, developing advanced clinical hardware, surgical optics, and telemetry systems.",
   keywords: [
     "Adalbert Medical Technology",
     "Adalbert MedTech",
@@ -81,7 +81,7 @@ export const siteConfig: SiteConfig = {
     "Healthcare Innovation Facility",
     "Surgical Equipment",
     "Diagnostic Systems",
-    "Richmond Vancouver Medical Tech",
+    "Chicago Medical Tech",
   ],
   contact: {
     phone: "+18472683752",
@@ -89,10 +89,12 @@ export const siteConfig: SiteConfig = {
     email: "info@leoalbermedtech.com",
     supportEmail: "support@leoalbermedtech.com",
     address: {
-      city: "Richmond",
-      region: "Vancouver, British Columbia",
-      country: "Canada",
-      display: "Richmond, Vancouver, BC, Canada",
+      street: "303 E Superior St",
+      city: "Chicago",
+      region: "Illinois",
+      country: "United States",
+      postalCode: "60611",
+      display: "303 E Superior St, Chicago, IL 60611",
     },
   },
   social: {
@@ -247,7 +249,7 @@ export const siteConfig: SiteConfig = {
       isMegaMenu: true,
       featured: {
         title: "Biomedical R&D Facility",
-        description: "Richmond laboratory advancing multi-channel sensors and algorithms.",
+        description: "Chicago laboratory advancing multi-channel sensors and algorithms.",
         href: "/innovation",
         image: "/cdc-p33DqVXhWvs-u.jpg",
         tag: "Applied R&D",
@@ -288,12 +290,12 @@ export const siteConfig: SiteConfig = {
     {
       title: "About",
       href: "/about",
-      description: "Corporate heritage, Canadian leadership, and engineering principles.",
+      description: "Corporate heritage, American leadership, and engineering principles.",
       children: [
         {
           title: "Corporate Profile",
           href: "/about",
-          description: "Our mission, leadership, and Richmond operations facility.",
+          description: "Our mission, leadership, and Chicago operations facility.",
         },
         {
           title: "Engineering Principles",
@@ -308,7 +310,7 @@ export const siteConfig: SiteConfig = {
         {
           title: "Contact & Head Office",
           href: "/contact",
-          description: "Connect with our biomedical engineering team in Richmond, BC.",
+          description: "Connect with our biomedical engineering team in Chicago, IL.",
         },
       ],
     },

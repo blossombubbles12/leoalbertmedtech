@@ -41,7 +41,7 @@ export default function TermsPage() {
                 3. Governing Law
               </h2>
               <p>
-                These terms are governed by the laws of the Province of British Columbia and the federal laws of Canada.
+                These terms are governed by the laws of the State of Illinois and the federal laws of the United States.
               </p>
             </div>
           </div>

@@ -13,7 +13,7 @@ export const researchData: ExtendedResearchPublication[] = [
     id: "res-01",
     slug: "optical-telemetry-artifact-filtering-study",
     title: "Real-Time Adaptive Filtering of Motion Artifacts in High-Density Ambulatory Telemetry",
-    authors: ["Engineering & Bio-Telemetry Research Group", "Richmond R&D Laboratory"],
+    authors: ["Engineering & Bio-Telemetry Research Group", "Chicago R&D Laboratory"],
     journalOrConference: "International Journal of Biomedical Instrumentation & Clinical Engineering",
     publicationDate: "2025-11",
     category: "Engineering Whitepaper",

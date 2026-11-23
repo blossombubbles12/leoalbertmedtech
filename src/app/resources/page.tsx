@@ -9,7 +9,7 @@ import { FileText, Download, ShieldCheck, ArrowRight, BookOpen, Layers, CheckCir
 export const metadata: Metadata = constructMetadata({
   title: "Clinical Resources & Documentation | Technical Datasheets & Guides",
   description:
-    "Technical documentation, user guides, whitepapers, and regulatory notices from Adalbert Medical Technology in Richmond, BC.",
+    "Technical documentation, user guides, whitepapers, and regulatory notices from Adalbert Medical Technology in Chicago, IL.",
   canonicalUrlRelative: "/resources",
 });
 
@@ -17,7 +17,7 @@ export default function ResourcesPage() {
   const resourceHighlights = [
     {
       title: "Regulatory & Compliance",
-      desc: "ISO 13485:2016 quality certifications, Health Canada MDL documentation, and FDA 510(k) summary statements.",
+      desc: "ISO 13485:2016 quality certifications, FDA 510(k) documentation, and regulatory compliance statements.",
       icon: ShieldCheck,
     },
     {
@@ -85,7 +85,7 @@ export default function ResourcesPage() {
                 Adalbert Medical Technology provides verified, audited documentation for hospital biomedical engineers, procurement committees, and clinical department heads.
               </Text>
               <Text className="text-[15.5px] text-slate-600 leading-relaxed">
-                Every document in our technical repository is version-controlled and maintained directly by our Canadian engineering headquarters in Richmond, BC, ensuring complete alignment with global medical device standards.
+                Every document in our technical repository is version-controlled and maintained directly by our US engineering headquarters in Chicago, IL, ensuring complete alignment with global medical device standards.
               </Text>
 
               <div className="space-y-3 pt-2">
@@ -197,7 +197,7 @@ export default function ResourcesPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto">
-                Our biomedical engineering department can supply specialized interface documentation, custom network topology mappings, and Health Canada regulatory validation packets.
+                Our biomedical engineering department can supply specialized interface documentation, custom network topology mappings, and FDA regulatory validation packets.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium max-w-2xl mx-auto">

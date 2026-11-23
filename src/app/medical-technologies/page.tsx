@@ -60,7 +60,7 @@ export default function MedicalTechnologiesPage() {
         description="Engineered with submillimeter tolerances, low-latency firmware, and robust galvanic isolation to meet the exacting demands of modern operating suites, intensive care units, and clinical research facilities."
         breadcrumbItems={[{ name: "Medical Technologies", url: "/medical-technologies" }]}
         badge="Engineering Architecture"
-        badgeTag="Richmond R&D Hub"
+        badgeTag="Chicago R&D Hub"
         imageSrc="/testalize-me-9xHsWmh3m_tech.jpg"
         imageAlt="Proprietary Medical Technologies and biomedical engineering hardware"
       />
@@ -295,7 +295,7 @@ export default function MedicalTechnologiesPage() {
               </Heading>
 
               <Text className="text-slate-200 text-[17px] sm:text-[18px] leading-relaxed">
-                Connect directly with our biomedical engineering specialists in Richmond, BC to discuss OEM sensor integration, custom firmware development, or hospital evaluation trials.
+                Connect directly with our biomedical engineering specialists in Chicago, IL to discuss OEM sensor integration, custom firmware development, or hospital evaluation trials.
               </Text>
 
               <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-wrap items-center justify-around gap-4 text-[15px] font-medium">

@@ -146,11 +146,11 @@ export default function HomePage() {
               </Heading>
 
               <Text variant="lead" className="text-slate-700">
-                Adalbert Medical Technology operates state-of-the-art medical engineering and manufacturing facilities in Richmond, Vancouver, Canada. We specialize in designing, fabricating, and deploying high-precision medical hardware, telemetry systems, and surgical platforms.
+                Adalbert Medical Technology operates state-of-the-art medical engineering and manufacturing facilities in Chicago, Illinois, USA. We specialize in designing, fabricating, and deploying high-precision medical hardware, telemetry systems, and surgical platforms.
               </Text>
 
               <Text variant="body" className="text-slate-600">
-                Our mission is to elevate patient care standards and clinical productivity by delivering intuitive, dependable, and technologically advanced instrumentation. Through deep collaboration with healthcare professionals, clinical researchers, and biomedical engineers, our Canadian facility builds solutions that stand up to the most demanding hospital environments.
+                Our mission is to elevate patient care standards and clinical productivity by delivering intuitive, dependable, and technologically advanced instrumentation. Through deep collaboration with healthcare professionals, clinical researchers, and biomedical engineers, our US facility builds solutions that stand up to the most demanding hospital environments.
               </Text>
 
               {/* Key Bullet Points */}
@@ -448,7 +448,7 @@ export default function HomePage() {
                       R&D Focus
                     </span>
                     <span className="text-[12px] font-semibold text-slate-500">
-                      Richmond Innovation Campus
+                      Chicago Innovation Campus
                     </span>
                   </div>
                   <h4 className="text-[16px] font-bold text-slate-900">
@@ -507,17 +507,17 @@ export default function HomePage() {
               );
             })}
 
-            {/* 6th Card: Corporate Verification & Canadian Presence */}
+            {/* 6th Card: Corporate Verification & US Presence */}
             <div className="bg-gradient-to-br from-[#003B73] to-[#00274D] text-white p-7 rounded-2xl shadow-md flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-white/10 text-sky-300 flex items-center justify-center">
                   <Building2 className="w-6 h-6" />
                 </div>
                 <h3 className="text-[19px] font-bold text-white">
-                  Richmond, Vancouver Facility
+                  Chicago, Illinois Facility
                 </h3>
                 <p className="text-[15.5px] text-slate-200 leading-relaxed">
-                  Headquartered in Richmond, BC, supporting healthcare organizations across Canada and international clinical partners worldwide.
+                  Headquartered in Chicago, IL, supporting healthcare organizations across the United States and international clinical partners worldwide.
                 </p>
               </div>
 
@@ -600,7 +600,7 @@ export default function HomePage() {
               </Heading>
               
               <Text className="text-[17px] text-slate-700 leading-relaxed">
-                From our Canadian headquarters in Richmond, BC, our engineering teams collaborate closely with hospital clinical directors, biomedical departments, and operating theatre teams across North America and international healthcare networks.
+                From our US headquarters in Chicago, IL, our engineering teams collaborate closely with hospital clinical directors, biomedical departments, and operating theatre teams across North America and international healthcare networks.
               </Text>
               
               <Text className="text-[15.5px] text-slate-600 leading-relaxed">
@@ -622,7 +622,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* 6.75 CANADIAN R&D FACILITY & OPERATIONS CENTER */}
+      {/* 6.75 CHICAGO R&D FACILITY & OPERATIONS CENTER */}
       <Section spacing="xl" background="default" className="border-t border-slate-200">
         <Container size="xl">
           <div className="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 lg:p-14 shadow-md">
@@ -633,7 +633,7 @@ export default function HomePage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[4/3] bg-slate-900">
                   <Image
                     src="/contact us building.jpg"
-                    alt="Adalbert Medical Technology corporate headquarters and R&D operations facility in Richmond, BC"
+                    alt="Adalbert Medical Technology corporate headquarters and R&D operations facility in Chicago, IL"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
@@ -645,10 +645,10 @@ export default function HomePage() {
                       Operations Campus
                     </span>
                     <h3 className="text-lg sm:text-xl font-extrabold text-[#003B73]">
-                      Richmond Operations Facility
+                      Chicago Operations Facility
                     </h3>
                     <p className="text-[13px] font-medium text-slate-600 mt-0.5">
-                      Adalbert Medical Technology &bull; Greater Vancouver, BC
+                      Adalbert Medical Technology &bull; Chicago, IL
                     </p>
                   </div>
                 </div>
@@ -658,10 +658,10 @@ export default function HomePage() {
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center gap-2">
                   <Badge variant="secondary">
-                    Canadian Facility
+                    US Facility
                   </Badge>
                   <span className="text-[12px] font-mono text-slate-500 bg-white px-2.5 py-0.5 rounded border border-slate-200">
-                    Richmond R&amp;D Campus
+                    Chicago R&amp;D Campus
                   </span>
                 </div>
 
@@ -672,7 +672,7 @@ export default function HomePage() {
                 <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 relative overflow-hidden">
                   <div className="w-1.5 h-full bg-[#0066CC] absolute left-0 top-0 bottom-0" />
                   <p className="text-[16px] sm:text-[17px] font-medium text-[#003B73] leading-relaxed pl-2">
-                    Our Richmond campus houses specialized cleanroom prototyping suites, optical spectroscopic alignment benches, and multi-vector electromagnetic compatibility testing chambers operated under strict ISO 13485:2016 quality standards.
+                    Our Chicago campus houses specialized cleanroom prototyping suites, optical spectroscopic alignment benches, and multi-vector electromagnetic compatibility testing chambers operated under strict ISO 13485:2016 quality standards.
                   </p>
                   <div className="pl-2 pt-1 text-[13px] font-bold text-slate-600">
                     Operations Directorate &bull; <span className="text-slate-900">Adalbert Medical Technology Facility</span>

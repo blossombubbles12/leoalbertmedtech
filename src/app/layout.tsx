@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_CA",
+    locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: `${siteConfig.name} | Advanced Medical Engineering`,
