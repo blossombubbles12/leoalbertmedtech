@@ -108,9 +108,9 @@ export const siteConfig: SiteConfig = {
         city: "Toronto",
         region: "ON",
         country: "Canada",
-        postalCode: "M2J 2Z",
+        postalCode: "M2J 2Z1",
         display:
-          "Fairview Health Centre – 5 Fairview Mall Drive, Toronto, ON M2J 2Z",
+          "Fairview Health Centre – 5 Fairview Mall Drive, Toronto, ON M2J 2Z1",
       },
     ],
   },
