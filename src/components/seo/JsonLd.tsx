@@ -3,6 +3,20 @@ import { siteConfig } from "@/config/site";
 import { BreadcrumbItem } from "@/types";
 
 export function OrganizationJsonLd() {
+  const addresses = [
+    siteConfig.contact.address,
+    ...(siteConfig.contact.additionalAddresses ?? []),
+  ];
+
+  const postalAddress = (address: (typeof addresses)[number]) => ({
+    "@type": "PostalAddress",
+    streetAddress: address.street,
+    addressLocality: address.city,
+    addressRegion: address.region,
+    postalCode: address.postalCode,
+    addressCountry: address.country,
+  });
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
@@ -13,12 +27,12 @@ export function OrganizationJsonLd() {
     description: siteConfig.description,
     telephone: siteConfig.contact.phoneFormatted,
     email: siteConfig.contact.email,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: siteConfig.contact.address.city,
-      addressRegion: siteConfig.contact.address.region,
-      addressCountry: siteConfig.contact.address.country,
-    },
+    address: postalAddress(siteConfig.contact.address),
+    location: addresses.map((address) => ({
+      "@type": "Place",
+      name: address.label,
+      address: postalAddress(address),
+    })),
     sameAs: [
       siteConfig.social.linkedin,
       siteConfig.social.twitter,

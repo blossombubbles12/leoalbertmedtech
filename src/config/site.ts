@@ -28,6 +28,16 @@ export interface NavItem {
   }[];
 }
 
+export interface SiteAddress {
+  label?: string;
+  street?: string;
+  city: string;
+  region: string;
+  country: string;
+  postalCode?: string;
+  display: string;
+}
+
 export interface SiteConfig {
   name: string;
   shortName: string;
@@ -41,14 +51,8 @@ export interface SiteConfig {
     phoneFormatted: string;
     email: string;
     supportEmail: string;
-    address: {
-      street?: string;
-      city: string;
-      region: string;
-      country: string;
-      postalCode?: string;
-      display: string;
-    };
+    address: SiteAddress;
+    additionalAddresses?: SiteAddress[];
   };
   social: {
     linkedin?: string;
@@ -89,6 +93,7 @@ export const siteConfig: SiteConfig = {
     email: "info@leoalbermedtech.com",
     supportEmail: "support@leoalbermedtech.com",
     address: {
+      label: "US Headquarters",
       street: "303 E Superior St",
       city: "Chicago",
       region: "Illinois",
@@ -96,6 +101,18 @@ export const siteConfig: SiteConfig = {
       postalCode: "60611",
       display: "303 E Superior St, Chicago, IL 60611",
     },
+    additionalAddresses: [
+      {
+        label: "Canada Office",
+        street: "Fairview Health Centre – 5 Fairview Mall Drive",
+        city: "Toronto",
+        region: "ON",
+        country: "Canada",
+        postalCode: "M2J 2Z",
+        display:
+          "Fairview Health Centre – 5 Fairview Mall Drive, Toronto, ON M2J 2Z",
+      },
+    ],
   },
   social: {
     linkedin: "https://linkedin.com/company/leoalbermedtech",

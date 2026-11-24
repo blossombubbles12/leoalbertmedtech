@@ -56,17 +56,21 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-4">
-                <div className="p-5 rounded-2xl border border-slate-200 bg-slate-50 space-y-1">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-white text-[#0066CC] shadow-xs flex items-center justify-center shrink-0">
-                      <MapPin className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <span className="text-[13px] font-bold text-slate-900 block">Facility Location</span>
-                      <span className="text-[14.5px] text-slate-700">{siteConfig.contact.address.display}</span>
+                {[siteConfig.contact.address, ...(siteConfig.contact.additionalAddresses ?? [])].map((address) => (
+                  <div key={address.display} className="p-5 rounded-2xl border border-slate-200 bg-slate-50 space-y-1">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-white text-[#0066CC] shadow-xs flex items-center justify-center shrink-0">
+                        <MapPin className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="text-[13px] font-bold text-slate-900 block">
+                          {address.label ?? "Facility Location"}
+                        </span>
+                        <span className="text-[14.5px] text-slate-700">{address.display}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                ))}
 
                 <div className="p-5 rounded-2xl border border-slate-200 bg-slate-50 space-y-1">
                   <div className="flex items-center gap-3">

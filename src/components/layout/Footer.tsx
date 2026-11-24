@@ -29,10 +29,19 @@ export function Footer() {
             </p>
 
             <div className="space-y-3 text-[14px] text-slate-300 pt-1">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#0066CC] shrink-0 mt-0.5" />
-                <span>{siteConfig.contact.address.display}</span>
-              </div>
+              {[siteConfig.contact.address, ...(siteConfig.contact.additionalAddresses ?? [])].map((address) => (
+                <div key={address.display} className="flex items-start gap-2.5">
+                  <MapPin className="w-4 h-4 text-[#0066CC] shrink-0 mt-0.5" />
+                  <span>
+                    {address.label && (
+                      <span className="block text-[12px] font-semibold uppercase tracking-wide text-slate-400">
+                        {address.label}
+                      </span>
+                    )}
+                    {address.display}
+                  </span>
+                </div>
+              ))}
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#0066CC] shrink-0" />
                 <a
